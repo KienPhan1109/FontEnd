@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Card</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .card {
+            background: #fff;
+            width: 400px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            border: 1px solid #e0e0e0;
+        }
+        .status {
+            display: inline-block;
+            background: #ffcc99;
+            color: #b35a00;
+            font-size: 12px;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 15px;
+        }
+        .title {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .info {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            margin: 8px 0;
+            color: #333;
+        }
+        .info i {
+            margin-right: 8px;
+            color: #555;
+        }
+        .progress-container {
+            margin: 15px 0;
+        }
+        .progress-bar {
+            height: 6px;
+            width: 100%;
+            background: #f0f0f0;
+            border-radius: 5px;
+            position: relative;
+        }
+        .progress-fill {
+            height: 100%;
+            width: 76%;
+            background: orange;
+            border-radius: 5px;
+        }
+        .progress-text {
+            text-align: right;
+            font-size: 14px;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+        .dates {
+            font-size: 14px;
+            color: #555;
+        }
+        .dates strong {
+            color: #333;
+        }
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 15px;
+        }
+        .avatars {
+            display: flex;
+        }
+        .avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 2px solid #fff;
+            margin-left: -10px;
+            position: relative;
+        }
+        .avatar:first-child {
+            margin-left: 0;
+        }
+        .tasks {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            font-weight: bold;
+            color: #333;
+        }
+        .tasks i {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <span class="status">INACTIVE</span>
+    <div class="title">Water resistant mosquito...</div>
+
+    <div class="info">
+        <i class="fas fa-user"></i> 
+        <strong>Client :</strong> <a href="#" style="color: blue; text-decoration: none;">Monsters.Inc</a>
+    </div>
+    
+    <div class="info">
+        <i class="fas fa-credit-card"></i> 
+        <strong>Budget :</strong> 10,500$
+    </div>
+
+    <div class="progress-container">
+        <span>Progress</span>
+        <div class="progress-bar">
+            <div class="progress-fill"></div>
+        </div>
+        <div class="progress-text">76%</div>
+    </div>
+
+    <div class="dates">
+        <p><strong>Started :</strong> 8th Mar. 2021</p>
+        <p><strong>Deadline :</strong> 15th Sept. 2022</p>
+    </div>
+
+    <div class="footer">
+        <div class="avatars">
+            <img src="https://randomuser.me/api/portraits/men/1.jpg" class="avatar">
+            <img src="https://randomuser.me/api/portraits/women/1.jpg" class="avatar">
+        </div>
+        <div class="tasks">
+            <i class="fas fa-list-check"></i> 125 Task
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

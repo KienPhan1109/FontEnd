@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: tahoma;
+            padding: 10px;
+            margin: auto;
+            background-color: rgba(231, 231, 231, 0.304);
+            display: flex;
+        }
+        .container {
+            margin: 50px;
+            background-color: white;
+            border-radius: 20px;
+            border: 1px solid black;
+            box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+        .title {
+            text-align: center;
+            padding: 5px;
+        }
+        .input {
+            text-align: left;
+            padding: 10px;
+        }
+        .inputName {
+            padding: 10px;
+        }
+        .inputEmail {
+            padding: 10px;
+        }
+        .inputPass {
+            padding: 10px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input {
+            width: 250px;
+            height: 25px;
+        }
+        .button {
+            margin-left: 20px;
+        }
+        .button input {
+            width: 256px;
+            height: 40px;
+            margin-bottom: 20px;
+            background-color: rgb(88, 88, 255);
+            border-radius: 5px;
+            border: 0;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Đăng Ký</h1>
+        </div>
+        <div class="input">
+            <div class="inputName">
+                <label for="name">Tên:</label><br>
+                <input type="text" id="name">
+            </div>
+            <div class="inputEmail">
+                <label for="email">Email:</label><br>
+                <input type="email" id="email">
+            </div>
+            <div class="inputPass">
+                <label for="pass">Mật khẩu:</label><br>
+                <input type="password" id="pass">
+            </div>
+        </div>
+        <div class="button">
+            <input type="button" value="Đăng Ký">
+        </div>
+    </div>
+</body>
+</html>

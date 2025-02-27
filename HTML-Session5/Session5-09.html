@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: auto;
+            padding: 50px;
+            display: flex;
+        }
+        .container {
+            background-color: rgba(222, 222, 222, 0.614);
+            padding: 30px;
+            font-family: tahoma;
+            text-align: left;
+            border-radius: 20px;
+            box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.8);
+        }
+        .title {
+            font-size: 25px;
+            font-weight: bold;
+            padding: 5px;
+            margin-left: 5px;
+            margin-top: 5px;
+        }
+        .name table {
+            border-spacing: 10px;
+        }
+        .option table {
+            border-spacing: 10px;
+        }
+        .in {
+            padding: 10px;
+        }
+        .in input{
+            height: 21px;
+            width: 420px;
+        }
+        .name input{
+            height: 21px;
+            width: 200px;
+        }
+        .checkbox {
+            border-top: 1px solid gray;
+            border-bottom: 1px solid gray;
+            padding: 10px;
+        }
+        .radio {
+            padding: 10px;
+        }
+        .card {
+            padding: 10px;
+        }
+        .card input{
+            height: 21px;
+            width: 200px;
+        }
+        .cvv {
+            padding: 10px;
+        }
+        .cvv input{
+            width: 100px;
+        }
+        .button {
+            padding: 10px;
+            border-top: 1px solid gray;
+        }
+        .button input {
+            background-color: rgba(9, 9, 255, 0.495);
+            width: 450px;
+            height: 30px;
+            border-radius: 5px;
+            border-width: 0;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            Billing address
+        </div>
+        <div class="name">
+            <table>
+                <tr>
+                    <td><label for="fname">First name</label></td>
+                    <td><label for="lname">Last name</label></td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="fname"></td>
+                    <td class="last"><input type="text" id="lname"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="in">
+            <label for="uname">Username</label><br>
+            <input type="text" id="uname" placeholder="Username"><br>
+        </div>
+        <div class="in">
+            <label for="email">Email (Optional)</label><br>
+            <input type="email" id="email" placeholder="you@example.com"><br>
+        </div>
+        <div class="in">
+            <label for="address">Address</label><br>
+            <input type="text" id="address" placeholder="1234 Main St"><br>
+        </div>
+        <div class="in">
+            <label for="address2">Address 2 (Optional)</label><br>
+            <input type="text" id="address2" placeholder="Apartment or suite"><br>
+        </div>
+        <div class="option">
+            <table>
+                <tr>
+                    <td><label for="country">Country</label></td>
+                    <td><label for="state">State</label></td>
+                    <td><label for="zip">Zip</label></td>
+                </tr>
+                <tr>
+                    <td>
+                        <select id="country" style="width: 150px; height: 21px;">
+                            <option>Choose...</option>
+                            <option>Vietnam</option>
+                            <option>United States</option>
+                            <option>Canada</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select id="state" style="width: 150px; height: 21px;">
+                            <option>Choose...</option>
+                            <option>Hanoi</option>
+                            <option>Ho Chi Minh</option>
+                            <option>New York</option>
+                            <option>California</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input type="text" id="zip" style="width: 100px;">
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" id="c1">
+            <label for="c1">Shipping address is the same as my billing address</label><br>
+            <input type="checkbox" id="c2">
+            <label for="c2">Save this information for next time</label>
+        </div>
+        <div class="title">
+            Payment
+        </div>
+        <div class="radio">
+            <input type="radio" id="r1">
+            <label for="r1">Credit card</label><br>
+            <input type="radio" id="r2">
+            <label for="r2">Debit card</label><br>
+            <input type="radio" id="r3">
+            <label for="r3">PayPal</label><br>
+        </div>
+        <div class="card">
+            <table>
+                <tr>
+                    <td><label for="ncard">Name on card</label></td>
+                    <td><label for="ccard">Credit card number</label></td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="ncard"></td>
+                    <td><input type="number" id="ccard"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="ncard" style="font-size: 12px; color: gray;">Full name as displayed on card</label>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="cvv">
+            <table>
+                <tr>
+                    <td><label for="expiration">Expiration</label></td>
+                    <td><label for="cvv">CVV</label></td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="expiration"></td>
+                    <td><input type="text" id="cvv"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="button">
+            <input type="button" value="Continue to checkout">
+        </div>
+    </div>
+</body>
+</html>

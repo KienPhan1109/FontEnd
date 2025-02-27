@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            font-family: tahoma;
+            background-color: rgba(255, 255, 255, 0.623);
+            margin: auto;
+            text-align: center;
+            padding: 10px;
+        }
+        .table table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 12px; 
+            border: 1px solid #ddd;
+        }
+        thead {
+            background-color: rgba(17, 17, 239, 0.635);
+            color: white;
+        }
+        .oddID {
+            background-color: rgba(222, 222, 222, 0.703);
+        }
+        .view {
+            background-color: rgba(0, 128, 0, 0.621);
+            border: #ddd;
+            padding: 5px;
+            color: white;
+        }
+        .update {
+            background-color: rgba(252, 249, 98, 0.89);
+            border: #ddd;
+            padding: 5px;
+        }
+        .delete {
+            background-color: rgba(255, 6, 6, 0.621);
+            border: #ddd;
+            padding: 5px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>ARTICLE MANAGEMENT TABLE</h1>
+        </div>
+        <div class="table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>TITLE</th>
+                        <th>AUTHOR</th>
+                        <th>PUBLISHED DATE</th>
+                        <th>ACTIONS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="oddID">
+                        <td>1</td>
+                        <td>Introduction</td>
+                        <td>John Doe</td>
+                        <td>2024-02-10</td>
+                        <td>
+                            <input class="view" type="button" value="View">
+                            <input class="update" type="button" value="Update">
+                            <input class="delete" type="button" value="Delete">
+                        </td>
+                    </tr>
+                    <tr class="evenId">
+                        <td>2</td>
+                        <td>Understanding JavaScript</td>
+                        <td>Jame Smith</td>
+                        <td>2024-01-22</td>
+                        <td>
+                            <input class="view" type="button" value="View">
+                            <input class="update" type="button" value="Update">
+                            <input class="delete" type="button" value="Delete">
+                        </td>
+                    </tr>
+                    <tr class="oddID">
+                        <td>3</td>
+                        <td>Web Development Basics</td>
+                        <td>Mike Johnson</td>
+                        <td>2023-12-15</td>
+                        <td>
+                            <input class="view" type="button" value="View">
+                            <input class="update" type="button" value="Update">
+                            <input class="delete" type="button" value="Delete">
+                        </td>
+                    </tr>
+                    <tr class="evenId">
+                        <td>4</td>
+                        <td>Responsive Design Techniques</td>
+                        <td>Sarah Lee</td>
+                        <td>2023-11-30</td>
+                        <td>
+                            <input class="view" type="button" value="View">
+                            <input class="update" type="button" value="Update">
+                            <input class="delete" type="button" value="Delete">
+                        </td>
+                    </tr>
+                    <tr class="oddID">
+                        <td>5</td>
+                        <td>SEO Best Practices</td>
+                        <td>Chris Brown</td>
+                        <td>2023-10-18</td>
+                        <td>
+                            <input class="view" type="button" value="View">
+                            <input class="update" type="button" value="Update">
+                            <input class="delete" type="button" value="Delete">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

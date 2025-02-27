@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: auto;
+            padding: 20px;
+            font-family: tahoma;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.87);
+            color: white;
+        }
+        .title {
+            margin-left: 10px;
+        }
+        .menu a{
+            color: white;
+            margin-right: 20px;
+            text-decoration: none;
+        }
+        .menu a:hover{
+            text-decoration: underline;
+        }
+        .body {
+            display: flex;
+            justify-items: center;
+            gap: 30px;
+            align-items: center;
+            background-color: rgba(179, 179, 179, 0.847);
+        }
+        .body img {
+            margin-top: 30px;
+            margin-left: 50px;
+            margin-bottom: 30px;
+            width: 20%;
+            border-radius: 360px;
+            border: 2px solid black;
+        }
+        .body p {
+            font-weight: bold;
+            font-size: 15px;
+        }
+        .projects {
+            background-color: white;
+            margin: 30px;
+        }
+        .button {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            align-items: center;
+        }
+        .button input {
+            background-color: rgba(0, 0, 0, 0.87);  
+            color: white;
+            width: 400px;
+            height: 4cqh;
+            border-radius: 5px;    
+            border: 0cap;
+        }
+        .footer {
+            background-color: rgba(179, 179, 179, 0.847);
+            text-align: center;
+            padding: 10px;
+        }
+        .footer a{
+            color: black;
+            text-decoration: none;
+        }
+        .footer a:hover{
+            text-decoration: underline;
+        }
+    </style>
+</head>     
+<body>
+    <div class="header">
+        <div class="title">
+            <h1>Portfolio của KienPhan</h1>
+        </div>
+        <div class="menu">
+            <a href="">Home</a>
+            <a href="">Projects</a>
+            <a href="">Contact</a>
+        </div>
+    </div>
+    <div class="body">
+        <img src="IMG/KienPhan.jpg" alt="">
+        <p>Xin chào! Tôi là KienPhan, một nhà phát triển web sáng tạo.</p>
+    </div>
+    <div class="projects">
+        <h2>Dự án của tôi</h2>
+        <div class="button">
+            <div class="b1">
+                <input type="button" value="Dự án 1">
+            </div>
+            <div class="b2">
+                <input type="button" value="Dự án 2">
+            </div>
+            <div class="b3">
+                <input type="button" value="Dự án 3">
+            </div>
+            <div class="b4">
+                <input type="button" value="Dự án 4">
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Kết nối với tôi trên <b><a href="">Linkedln</a></b> | <b><a href="">GitHub</a></b></p>
+    </div>
+</body>
+</html>
