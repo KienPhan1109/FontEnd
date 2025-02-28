@@ -91,25 +91,25 @@
 
     <h2>Cat Form</h2>
     <form>
-        <p>Is your cat an indoor or outdoor cat?</p>
-        <input type="radio" id="indoor" value="Indoor" checked>
-        <label for="indoor">Indoor</label>
-        <input type="radio" id="outdoor" value="Outdoor">
-        <label for="outdoor">Outdoor</label>
-
-        <p>What's your cat's personality?</p>
-        <input type="checkbox" id="loving" value="Loving" checked>
-        <label for="loving">Loving</label>
-        <input type="checkbox" id="lazy" value="Lazy">
-        <label for="lazy">Lazy</label>
-        <input type="checkbox" id="energetic" value="Energetic">
-        <label for="energetic">Energetic</label>
-
-        <br><br>
-        <input type="text" placeholder="cat photo URL">
+        <fieldset>
+            <legend>Is your cat an indoor or outdoor cat?</legend>
+            <input type="radio" id="indoor" value="Indoor" checked>
+            <label for="indoor">Indoor</label>
+            <input type="radio" id="outdoor" value="Outdoor">
+            <label for="outdoor">Outdoor</label>
+        </fieldset>
+        <fieldset>
+            <legend>What's your cat's personality?</legend>
+            <input type="checkbox" id="loving" value="Loving" checked>
+            <label for="loving">Loving</label>
+            <input type="checkbox" id="lazy" value="Lazy">
+            <label for="lazy">Lazy</label>
+            <input type="checkbox" id="energetic" value="Energetic">
+            <label for="energetic">Energetic</label>
+        </fieldset>
+        <input type="url" placeholder="cat photo URL">
         <button type="submit">Submit</button>
     </form>
-
     <p>No Copyright - <a href="https://rikkei.edu.vn" >rikkei.edu.vn</a></p>
 </body>
 </html>
