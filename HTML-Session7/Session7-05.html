@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            width: 350px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            font-size: 25px;
+            font-weight: bold;
+            background-color: rgb(211, 10, 10);
+            width: 100%;
+            border-radius: 10px;
+            text-align: center;
+            color: white;
+            position: relative;
+            padding: 1px;
+        }
+        img {
+            position: absolute;
+            top: -20px;
+            right: -30px;
+        }
+        .body {
+            padding: 20px;
+            text-align: center;
+            font-size: 17px;
+        }
+        .body p {
+            color: rgb(58, 58, 58);
+            border-bottom: 1px solid rgb(58, 58, 58);
+            padding-bottom: 10px;
+        }
+        .body span.highlight {
+            color: rgb(255, 155, 5);
+            font-weight: bold;
+        }
+        .hide {
+            border-bottom: 0px !important;
+        }
+        .b1 input {
+            padding: 10px;
+            background-color: rgb(211, 10, 10);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            width: 150px;
+        }
+        .b1 {
+            display: flex;
+            justify-content: center;
+            padding-bottom: 10px;
+        }
+        .b2 input {
+            padding: 10px;
+            background-color: rgb(255, 255, 255);
+            color: white;
+            border: 1px solid rgb(211, 10, 10);
+            border-radius: 10px;
+            width: 100px;
+            color: rgb(211, 10, 10);
+        }
+        .b2 {
+            display: flex;
+            justify-content: center;
+            padding-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="title">
+                <p>5G160B</p>
+                <img src="IMG/hot.png" alt="">
+            </div>
+        </div>
+        <div class="body">
+            <p>Data: <span class="highlight">120Gb (4Gb/ ngày)</span></p>
+            <p>Giá: <span class="highlight">160.000 đ</span></p>
+            <p>Nội mạng: <span class="highlight"><10 phút (tối đa 1000 phút/ 30 ngày)</10></span></p>
+            <p>Ngoại mạng: <span class="highlight">100 phút</span></p>
+            <p>Free data: <span class="highlight">TV360 Basic, 20Gb lưu trữ Mybox</span></p>
+            <p>Thời hạn: <span class="highlight">30 ngày</span></p>
+            <p class="hide">(Sử dụng 4Gb/ ngày)</p>
+        </div>
+        <div class="button">
+            <div class="b1">
+                <input type="button" value="ĐĂNG KÝ">
+            </div>
+            <div class="b2">
+                <input type="button" value="Chi tiết">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

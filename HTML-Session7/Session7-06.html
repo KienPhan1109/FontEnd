@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            height: 1000px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(214, 234, 252);
+        }
+        .container {
+            font-size: 17px;
+            background-color: white;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+        .head {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 10px;
+        }
+        .box1 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #a0a0f7;
+            color: #2222fc;
+            padding: 0px 10px;
+        }
+        .box2 {
+            padding: 0px 10px;
+        }
+        .head {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 10px;
+            border-top: 1px solid rgb(191, 176, 176);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="head">
+            <p>Accordion Item #1</p>
+            <div class="icon">
+                <i class="fa fa-solid fa-chevron-down"></i>
+            </div>
+        </div>
+        <div class="body">
+            <div class="box1">
+                <p>Accordion Item #2</p>
+                <div class="icon2">
+                    <i class="fa fa-solid fa-chevron-up"></i>
+                </div>
+            </div>
+            <div class="box2">
+                <p>
+                    <b>This is the second item's accordion body.</b> It is hidden by default, until the collapse plugin adds <br>
+                    the appropriate classes that we use to style each element. These classes control the overall <br>
+                    appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with <br>
+                    custom CSS or overriding our default variables. It's also worth noting that just about any HTML <br>
+                    can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </p>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Accordion Item #3</p>
+            <div class="icon3">
+                <i class="fa fa-solid fa-chevron-down"></i>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
