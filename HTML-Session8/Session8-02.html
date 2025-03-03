@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            height: 1000px;
+            background-color: rgb(255, 255, 255);
+            font-size: 13px;
+        }
+        .container {
+            color: white;
+            background-color: rgb(24, 19, 67);
+            padding: 10px;
+            border-radius: 20px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+        table {
+            padding: 10px;
+            border-spacing: 20px;
+        }
+        input {
+            height: 25px;
+            background-color: rgb(24, 19, 67);
+            border: 1px solid rgb(168, 168, 168);
+        }
+        textarea {
+            height: 70px;
+            width: 350px;
+            background-color: rgb(24, 19, 67);
+            border: 1px solid rgb(168, 168, 168);
+        }
+        button {
+            background-color: white;
+            width: 150px;
+            height: 50px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <table>
+                <tr>
+                    <td><label for="name">Name</label></td>
+                    <td><label for="email">Email</label></td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="name"></td>
+                    <td><input type="email" id="email"></td>
+                </tr>
+                <tr>
+                    <td><label for="mess">Message</label></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><textarea name="" id="mess"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button>SEND MESSAGE</button></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

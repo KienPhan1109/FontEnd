@@ -1,12 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Document</title>
-</head>
-<body>
-    <i class="fa-solid fa-list-check"></i>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ss5_Bai9</title>
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+        /* Basic page setup */
+body {
+  font-family: Arial, monospace;
+  margin: 20px;
+  background-color: #f5f5f5;
+}
+h2,
+h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.form-container {
+  background-color: #fff;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.form-row {
+  display: flex;
+  gap: 10px; 
+}
+.form-row .form-group {
+  flex: 1;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.payment-options {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+.payment-options input[type="radio"] {
+  margin-right: 5px;
+}
+
+button {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+button:hover {
+  background-color: #0056b3;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+}
+.input-group span {
+  padding: 8px 10px;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-right: none;
+  border-radius: 3px 0 0 3px;
+  color: #555;
+  font-size: 14px;
+}
+.input-group input {
+  border: 1px solid #ccc;
+  border-left: none;
+  border-radius: 0 3px 3px 0;
+  padding: 8px;
+  flex: 1;
+  font-size: 14px;
+}
+    </style>
+  </head>
+  <body>
+    <h2 style="text-align: center">Checkout Form</h2>
+
+    <div class="form-container">
+      <h3>Billing address</h3>
+
+      <!-- First & Last Name -->
+      <div class="form-row">
+        <div class="form-group">
+          <label for="firstname">First name</label>
+          <input
+            type="text"
+            id="firstname"
+            name="firstname"
+            placeholder="First name"
+          />
+        </div>
+        <div class="form-group">
+          <label for="lastname">Last name</label>
+          <input
+            type="text"
+            id="lastname"
+            name="lastname"
+            placeholder="Last name"
+          />
+        </div>
+      </div>
+
+      <!-- Username -->
+      <div class="form-group">
+        <label for="username">Username</label>
+        <div class="input-group">
+          <span>@</span>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Username"
+          />
+        </div>
+      </div>
+
+      <!-- Email (Optional) -->
+      <div class="form-group">
+        <label for="email">Email (Optional)</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="you@example.com"
+        />
+      </div>
+
+      <!-- Address -->
+      <div class="form-group">
+        <label for="address">Address</label>
+        <input
+          type="text"
+          id="address"
+          name="address"
+          placeholder="1234 Main St"
+        />
+      </div>
+
+      <!-- Country, State, Zip -->
+      <div class="form-row">
+        <div class="form-group">
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="">Choose...</option>
+            <option value="US">United States</option>
+            <option value="CA">Canada</option>
+            <!-- yada yada -->
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="state">State</label>
+          <select id="state" name="state">
+            <option value="">Choose...</option>
+            <option value="NY">New York</option>
+            <option value="CA">California</option>
+            <!-- yada yada -->
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="zip">Zip</label>
+          <input type="text" id="zip" name="zip" />
+        </div>
+      </div>
+
+      <!-- Checkbox -->
+      <div class="checkbox-group">
+        <input type="checkbox" id="same-address" name="same-address" />
+        <label for="same-address"
+          >Shipping address is the same as my billing address</label
+        >
+      </div>
+      <div class="checkbox-group">
+        <input type="checkbox" id="save-info" name="save-info" />
+        <label for="save-info">Save this information for next time</label>
+      </div>
+
+      <!-- PAYMENT -->
+      <h3>Payment</h3>
+      <div class="payment-options">
+        <label>
+          <input type="radio" name="paymentMethod" value="credit" checked />
+          Credit card
+        </label>
+        <label>
+          <input type="radio" name="paymentMethod" value="debit" />
+          Debit card
+        </label>
+        <label>
+          <input type="radio" name="paymentMethod" value="paypal" />
+          PayPal
+        </label>
+      </div>
+
+      <!-- Name on card -->
+      <div class="form-group">
+        <label for="cc-name">Name on card</label>
+        <input
+          type="text"
+          id="cc-name"
+          name="cc-name"
+          placeholder="Full name as displayed on card"
+        />
+      </div>
+
+      <!-- Credit card number -->
+      <div class="form-group">
+        <label for="cc-number">Credit card number</label>
+        <input type="text" id="cc-number" name="cc-number" />
+      </div>
+
+      <!-- Expiration & CVV -->
+      <div class="form-row">
+        <div class="form-group">
+          <label for="cc-expiration">Expiration</label>
+          <input
+            type="text"
+            id="cc-expiration"
+            name="cc-expiration"
+            placeholder="MM/YY"
+          />
+        </div>
+        <div class="form-group">
+          <label for="cc-cvv">CVV</label>
+          <input type="text" id="cc-cvv" name="cc-cvv" />
+        </div>
+      </div>
+
+      <button type="submit">Continue to checkout</button>
+    </div>
+  </body>
 </html>
