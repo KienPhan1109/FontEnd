@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/7b988689d5.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            height: 1000px;
+            background-color: rgb(214, 234, 252);
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            background-color: #E5E5E5;
+            padding: 20px;
+            border-radius: 50px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+        .header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        img {
+            width: 150px;
+            margin: 0px 100px;
+        }
+        .link{
+            display: flex;
+            gap: 50px;
+        }
+        .link a{
+            font-size: 17px;
+            font-weight: bold;
+            color: rgb(142, 142, 142);
+            text-decoration: none;
+        }
+        a:hover{
+            color: black;
+        }
+        .button {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 0px 100px;
+            background-color: rgb(154, 154, 154);
+            padding: 0px 20px;
+            border-radius: 10px;
+            color: #ffffff;
+        }
+        .button:hover {
+            background-color: #5c5c5c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="icon">
+                <img src="IMG/icon.png" alt="">
+            </div>
+            <div class="link">
+                <a href="#">Home</a>
+                <a href="#">Category</a>
+                <a href="#">Trending News</a>
+                <a href="#">Recent News</a>
+                <a href="#">Clubs Ranking</a>
+                <a href="#">Sports Article</a>
+            </div>
+            <div class="button">
+                <i class="fa fa-solid fa-magnifying-glass"></i>
+                <p>Search</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

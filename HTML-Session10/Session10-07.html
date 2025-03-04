@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/75a18646d0.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            height: 1100px;
+            background-color: rgb(194, 194, 194);
+        }
+        .container {
+            color: rgb(0, 0, 0);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ffffff;
+            padding: 30px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+            gap: 30px;
+        }
+        .flex {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+        .box1 img {
+            width: 350px;
+            border-radius: 10px;
+        }
+        .box1 {
+            width: auto;
+            height: auto;
+            position: relative;
+        }
+        .caption {
+            position: absolute;
+            bottom: 1%;
+            color: white;
+            background: linear-gradient(to right, #ada769 20%, #c6e387 80%);
+            padding: 20px;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            line-height: 25px;
+            width: 310px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .title:hover {
+            text-decoration: underline;
+            color: #ada769;
+        }
+        img:hover {
+            opacity: 0.8;
+        }
+        .box2{
+            width: auto;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            background-color: rgb(244, 244, 244);
+            padding: 20px 40px;
+            border-radius: 10px;
+        }
+        .box{
+            align-items: start;
+            display: flex;
+            gap: 15px;
+            margin-bottom: 11px;
+            align-items: center;
+            justify-content: center;
+        }
+        .box img {
+            border-radius: 10px;
+            width: 80px;
+            height: 80px;
+        }
+        .date {
+            color: rgb(126, 126, 126);
+            font-size: 13px;
+            line-height: 20px;
+        }
+        .title {
+            line-height: 25px;
+            font-weight: bold;
+        }
+        .button {
+            margin-top: 10px;
+            background-color: #d9d9d9;
+            text-align: center;
+            width: 70px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            color: #ffffff;
+            position: relative;
+            left: 38%;
+        }
+        .button:hover {
+            background-color: #484848;
+        }
+        .box3{
+            width: auto;
+            height: auto;
+            background-color: rgb(244, 244, 244);
+            border-radius: 10px;
+        }
+        .th, .td {
+            padding: 39px 50px;
+            display: flex;
+            gap: 25px;
+        }
+        .td:hover {
+            background-color: #ffffff;
+        }
+        .td {
+            padding: 10px;
+            border-bottom: 1px solid rgb(185, 185, 185);
+        }
+        .th {
+            font-weight: bold;
+        }
+        .logo {
+            width: 200px;
+            margin-left: 40px;
+            margin-right: 40px;
+            display: flex;
+            gap: 15px;
+            font-weight: bold;
+        }
+        .right {
+            margin-right: 200px;
+        }
+        #none td {
+            border: none;
+        }
+        span {
+            font-size: 16px;
+        }
+        .club_name {
+            display: flex;
+            justify-items: center;
+            gap: 15px;
+        }
+        .club_name img {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+        }
+        .table_container {
+            text-align: left;
+            width: 100%;
+        }
+        .name {
+            margin-right: 50px;
+        }
+        .table_container td {
+            border-bottom: 1px solid rgb(160, 160, 160);
+        }
+        .table_container td, .table_container th{
+            padding: 14px;
+        }
+        .left{
+            margin-left: 200px;
+        }
+        tr:hover td{
+            background-color: #e9e9e9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="recent">
+            <h1>
+                Recent News
+            </h1>
+            <div class="flex">
+                <div class="box1">
+                    <img src="IMG/taekwondo.png" alt="">
+                    <div class="caption">
+                        <span>Day 5 Highlights </span><br>
+                        Baku 2023 World Taekwondo <br>
+                        Championships
+                    </div>
+                </div>
+                <div class="box2">
+                    <div class="box">
+                        <img src="IMG/basketball.png" alt="">
+                        <div class="text">
+                            <div class="date">
+                                #Pollar.87 - 12 July 2023
+                            </div>
+                            <div class="title">
+                                Baku 2023 Taekwondo <br>
+                                Championships
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="IMG/football.png" alt="">
+                        <div class="text">
+                            <div class="date">
+                                #Goft. Toni - 20 July 2023
+                            </div>
+                            <div class="title">
+                                Open Championship <br>
+                                Royal Liverpool Golf
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="IMG/carsport.png" alt="">
+                        <div class="text">
+                            <div class="date">
+                                #Cricket. Toni - 27 July 2023
+                            </div>
+                            <div class="title">
+                                Ireland Tour of England <br>
+                                Test 2023
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button">
+                        More <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clubs">
+            <h1>
+                Clubs Ranking
+            </h1>
+            <div class="box3">
+                <table class="table_container">
+                    <tr>
+                        <th>Club</th>
+                        <th>GP</th>
+                        <th>W</th>
+                        <th>D</th>
+                        <th>L</th>
+                        <th>F</th>
+                        <th>A</th>
+                        <th>GD</th>
+                    </tr>
+                    <tr>
+                        <td class="club_name">
+                            <div class="index">1</div>
+                            <img src="IMG/1.png" alt="">
+                            <div class="name">Manchester City</div>
+                        </td>
+                        <td>38</td><td>29</td><td>6</td><td>3</td><td>99</td><td>26</td><td>73</td>
+                    </tr>
+                    <tr>
+                        <td class="club_name">
+                            <div class="index">2</div>
+                            <img src="IMG/1.png" alt="">
+                            <div class="name">Liverpool</div>
+                        </td>
+                        <td>38</td><td>28</td><td>8</td><td>2</td><td>94</td><td>26</td><td>68</td>
+                    </tr>
+                    <tr>
+                        <td class="club_name">
+                            <div class="index">3</div>
+                            <img src="IMG/1.png" alt="">
+                            <div class="name">Chelsea</div>
+                        </td>
+                        <td>38</td><td>21</td><td>11</td><td>6</td><td>76</td><td>33</td><td>43</td>
+                    </tr>
+                    <tr>
+                        <td class="club_name">
+                            <div class="index">4</div>
+                            <img src="IMG/1.png" alt="">
+                            <div class="name">Tottenham Hotspur</div>
+                        </td>
+                        <td>38</td><td>22</td><td>5</td><td>11</td><td>69</td><td>40</td><td>29</td>
+                    </tr>
+                    <tr>
+                        <td class="club_name">
+                            <div class="index">5</div>
+                            <img src="IMG/1.png" alt="">
+                            <div class="name">Arsenal</div>
+                        </td>
+                        <td>38</td><td>22</td><td>3</td><td>13</td><td>61</td><td>48</td><td>13</td>
+                    </tr>
+                    <tr id="none">
+                        <td class="club_name">
+                            <div class="index">6</div>
+                            <img src="IMG/1.png" alt="">
+                            <div class="name">Manchester United</div>
+                        </td>
+                        <td>38</td><td>16</td><td>10</td><td>12</td><td>57</td><td>57</td><td>0</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
