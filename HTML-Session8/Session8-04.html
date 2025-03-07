@@ -1,134 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        img {
-            width: 50%;
-            position: absolute;
-            top: 30%;
-            left: 30%;
-            rotate: -45deg;
-        }
-        body {
-            font-family: 'Times New Roman', Times, serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: auto;
-            height: 1000px;
-            background-color: rgb(214, 234, 252);
-        }
-        .container {
-            width: 850px;
-            background-color: white;
-            padding: 30px;
-            border-radius: 20px;
-            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-        }
-        .box12 {
-            display: flex;
-            justify-content: space-between;
-        }
-        .box34 {
-            display: flex;
-            justify-content: space-between;
-        }
-        .box {
-            display: flex;
-            align-items: center;
-            margin-left: 20px;
-        }
-        .background {
-            border: 1px solid rgb(85, 84, 84);
-            width: 80px;
-            height: 80px;
-            position: relative;
-            rotate: 45deg;
-            margin-right: 50px;
-        }
-        p {
-            font-size: 14px;
-            color: rgb(109, 109, 109);
-            line-height: 20px;
-            text-align: justify;
-        }
-        .title {
-            display: inline-block;
-            border-bottom: 3px solid rgb(179, 119, 9);
-            margin-bottom: 30px;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <div class="title">
-            <h1>Erat lacinia</h1>
-        </div>
-        <div class="body">
-            <div class="box12">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script
+            src="https://kit.fontawesome.com/75a18646d0.js"
+            crossorigin="anonymous"
+        ></script>
+        <title>Document</title>
+        <style>
+            body {
+                font-family: "Times New Roman", Times, serif;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: auto;
+                height: 100vh;
+                background-color: rgb(49, 49, 49);
+            }
+            .container {
+                width: 850px;
+                background-color: white;
+                padding: 30px;
+                border-radius: 20px;
+                box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+            }
+            .body {
+                display: grid;
+                grid-template-columns: auto auto;
+                grid-template-rows: auto auto;
+            }
+            .box {
+                display: flex;
+                align-items: center;
+                gap: 50px;
+                position: relative;
+            }
+            .background {
+                border: 1px solid rgb(85, 84, 84);
+                width: 80px;
+                height: 80px;
+                rotate: 45deg;
+            }
+            .icon {
+                position: absolute;
+                font-size: 40px;
+                left: 20px;
+                top: 63px;
+                color: rgb(179, 119, 9);
+            }
+            #plane {
+                font-size: 35px;
+            }
+            #chart {
+                position: absolute;
+                left: 2px;
+            }
+            p {
+                font-size: 14px;
+                color: rgb(109, 109, 109);
+                line-height: 20px;
+                text-align: justify;
+            }
+            .title {
+                display: inline-block;
+                border-bottom: 3px solid rgb(179, 119, 9);
+                margin-bottom: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="title">
+                <h1>Erat lacinia</h1>
+            </div>
+            <div class="body">
                 <div class="box">
-                    <div class="background">
-                        <img src="IMG/daimond.png" alt="">
+                    <div class="background"></div>
+                    <div class="icon" id="gem">
+                        <i class="fa-regular fa-gem"></i>
                     </div>
                     <div class="content">
                         <h2>Portilor ullamcorper</h2>
                         <p>
-                            Aenean ornare valit lacus, ac varius enim   <br>
-                            lorem ullamcorper dolore. Proin aliquam     <br>
-                            facilisis ante interdum. Sed nulla armet    <br>
+                            Aenean ornare valit lacus, ac varius enim <br />
+                            lorem ullamcorper dolore. Proin aliquam <br />
+                            facilisis ante interdum. Sed nulla armet <br />
                             lorem feugiat tempus aliquam.
                         </p>
                     </div>
                 </div>
                 <div class="box">
-                    <div class="background">
-                        <img src="IMG/daimond.png" alt="">
+                    <div class="background"></div>
+                    <div class="icon" id="plane">
+                        <i class="fa-solid fa-paper-plane"></i>
                     </div>
                     <div class="content">
-                        <h2>Portilor ullamcorper</h2>
+                        <h2>Sapien veroeros</h2>
                         <p>
-                            Aenean ornare valit lacus, ac varius enim   <br>
-                            lorem ullamcorper dolore. Proin aliquam     <br>
-                            facilisis ante interdum. Sed nulla armet    <br>
+                            Aenean ornare valit lacus, ac varius enim <br />
+                            lorem ullamcorper dolore. Proin aliquam <br />
+                            facilisis ante interdum. Sed nulla armet <br />
+                            lorem feugiat tempus aliquam.
+                        </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="background"></div>
+                    <div class="icon" id="rocket">
+                        <i class="fa-solid fa-rocket"></i>
+                    </div>
+                    <div class="content">
+                        <h2>Quam lorem ipsum</h2>
+                        <p>
+                            Aenean ornare valit lacus, ac varius enim <br />
+                            lorem ullamcorper dolore. Proin aliquam <br />
+                            facilisis ante interdum. Sed nulla armet <br />
+                            lorem feugiat tempus aliquam.
+                        </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="background"></div>
+                    <div class="icon">
+                        <i class="fa-solid fa-chart-simple" id="chart"></i>
+                    </div>
+                    <div class="content">
+                        <h2>Sed magma finibus</h2>
+                        <p>
+                            Aenean ornare valit lacus, ac varius enim <br />
+                            lorem ullamcorper dolore. Proin aliquam <br />
+                            facilisis ante interdum. Sed nulla armet <br />
                             lorem feugiat tempus aliquam.
                         </p>
                     </div>
                 </div>
             </div>
-            <div class="box34">
-                <div class="box">
-                    <div class="background">
-                        <img src="IMG/daimond.png" alt="">
-                    </div>
-                    <div class="content">
-                        <h2>Portilor ullamcorper</h2>
-                        <p>
-                            Aenean ornare valit lacus, ac varius enim   <br>
-                            lorem ullamcorper dolore. Proin aliquam     <br>
-                            facilisis ante interdum. Sed nulla armet    <br>
-                            lorem feugiat tempus aliquam.
-                        </p>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="background">
-                        <img src="IMG/daimond.png" alt="">
-                    </div>
-                    <div class="content">
-                        <h2>Portilor ullamcorper</h2>
-                        <p>
-                            Aenean ornare valit lacus, ac varius enim   <br>
-                            lorem ullamcorper dolore. Proin aliquam     <br>
-                            facilisis ante interdum. Sed nulla armet    <br>
-                            lorem feugiat tempus aliquam.
-                        </p>
-                    </div>
-                </div>
-            </div>
         </div>
-    </div>
-</body>
+    </body>
 </html>

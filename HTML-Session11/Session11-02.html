@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            width: 100%;
+        }
+        .header {
+            margin: 10px;
+            margin: 10px;
+            background-color: rgb(200, 200, 200);
+            height: 15vh;
+        }
+        .body {
+            display: flex;
+            height: 33vh;
+        }
+        .sidebar1, .sidebar2 {
+            width: 50%;
+            margin: 10px;
+        }
+        .sidebar1 {
+            background-color: red;
+        }
+        .sidebar2 {
+            background-color: yellow;
+        }
+        .footer {
+            margin: 10px;
+            background-color: rgb(200, 200, 200);
+            height: 15vh;
+        }
+        .container_box {
+            display: flex;
+            height: 33vh;
+        }
+        .box1, .box2, .box3 {
+            margin: 10px;
+            width: 33%;
+        }
+        .box1 {
+            background-color: blue;
+        }
+        .box2 {
+            background-color: red;
+        }
+        .box3 {
+            background-color: yellow;
+        }
+        @media (max-width: 480px) {
+            .body {
+                flex-direction: column;
+                height: 66vh;
+            }
+            .sidebar1, .sidebar2 {
+                width: 95%;
+                height: 33vh;
+            }
+            .container_box {
+                flex-direction: column;
+                height: 80vh;
+            }
+            .box1, .box2, .box3 {
+                width: 95%;
+                height: 40vh;
+            }   
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header"></div>
+        <div class="body">
+            <div class="sidebar1"></div>
+            <div class="sidebar2"></div>
+        </div>
+        <div class="footer"></div>
+        <div class="container_box">
+            <div class="box1"></div>
+            <div class="box2"></div>
+            <div class="box3"></div>
+        </div>
+    </div>
+</body>
+</html>

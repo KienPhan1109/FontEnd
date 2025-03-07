@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script
+            src="https://kit.fontawesome.com/75a18646d0.js"
+            crossorigin="anonymous"
+        ></script>
+        <title>Document</title>
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: auto;
+                height: 100vh;
+                background-color: rgb(194, 194, 194);
+            }
+            .container {
+                margin: auto;
+                color: rgb(0, 0, 0);
+                background-color: #ffffff;
+                padding: 30px;
+                box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+                gap: 30px;
+            }
+            .header {
+                display: flex;
+                justify-content: space-between;
+                background-color: #c6f4d0;
+                padding: 10px 100px;
+                font-size: 25px;
+            }
+            .left {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+                align-items: center;
+            }
+            #filter {
+                font-weight: bold;
+            }
+            #border {
+                border: 1px solid #bababa;
+                height: 25px;
+            }
+            .right {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 30px;
+            }
+            .right p {
+                font-weight: bold;
+            }
+            .right div {
+                color: #a1a1a1;
+            }
+            #show {
+                background-color: white;
+                padding: 10px;
+            }
+            #short {
+                background-color: white;
+                padding: 10px;
+                padding-right: 60px;
+            }
+            .body {
+                padding: 50px;
+                display: grid;
+                grid-template-columns: auto auto auto auto;
+                grid-template-rows: auto auto auto auto;
+                justify-items: center;
+                align-items: center;
+                gap: 30px;
+            }
+            .box img {
+                width: 350px;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+            .image {
+                position: relative;
+            }
+            .sale {
+                background-color: rgb(242, 103, 103);
+                width: 50px;
+                display: flex;
+                justify-content: center;
+                border-radius: 50%;
+                color: white;
+                position: absolute;
+                top: 20px;
+                right: 20px;
+            }
+            .new {
+                background-color: rgb(7, 137, 137);
+                width: 50px;
+                display: flex;
+                justify-content: center;
+                border-radius: 50%;
+                color: white;
+                position: absolute;
+                top: 20px;
+                right: 20px;
+            }
+            .text {
+                padding: 5px 20px 30px 20px;
+                background-color: #f4f0f0;
+                position: relative;
+                bottom: 15px;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+            }
+            .text p {
+                font-size: 20px;
+                color: #979595;
+            }
+            .text span {
+                text-decoration: line-through;
+                font-size: 16px;
+                margin-left: 20px;
+                color: #c3c3c3;
+            }
+            .box {
+                position: relative;
+            }
+            .select {
+                border-radius: 10px;
+                position: absolute;
+                bottom: 15px;
+                width: 350px;
+                height: 550px;
+                background-color: #535353;
+                opacity: 0;
+                display: flex;
+                flex-direction: column;
+                justify-items: center;
+                align-items: center;
+            }
+            .box:hover > .select {
+                opacity: 0.9;
+            }
+            .button {
+                opacity: 1;
+                margin-top: 230px;
+                padding: 20px 65px;
+                background-color: white;
+                color: #ff2a2a;
+                font-weight: bold;
+                margin-bottom: 30px;
+            }
+            .button:hover {
+                background-color: #373737;
+                color: white;
+            }
+            .link {
+                color: white;
+                display: flex;
+                gap: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <div class="left">
+                    <i class="fa-solid fa-sliders"></i>
+                    <p id="filter">Filter</p>
+                    <i class="fa-solid fa-sliders"></i>
+                    <i class="fa-solid fa-sliders"></i>
+                    <p id="border"></p>
+                    <p>Showing 1 - 16 of 32 results</p>
+                </div>
+                <div class="right">
+                    <p>Show</p>
+                    <div id="show">16</div>
+                    <p>Short by</p>
+                    <div id="short">Default</div>
+                </div>
+            </div>
+            <div class="body">
+                <div class="box">
+                    <div class="image">
+                        <img src="IMG/carsport.png" alt="" />
+                        <div class="sale">
+                            <p>-30%</p>
+                        </div>
+                        <div class="text">
+                            <h1>Syltherine</h1>
+                            <p>Stylish cafe chair</p>
+                            <h2>Rp 2.500.000 <span> Rp 3.5000.000 </span></h2>
+                        </div>
+                    </div>
+                    <div class="select">
+                        <div class="button">Add to cart</div>
+                        <div class="link">
+                            <div class="div">
+                                <i class="fa-solid fa-sliders"></i> Share
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-sliders"></i> Compare
+                            </div>
+                            <div><i class="fa-solid fa-sliders"></i> Like</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="IMG/carsport.png" alt="" />
+                        <div class="text">
+                            <h1>Leviosa</h1>
+                            <p>Stylish cafe chair</p>
+                            <h2>Rp 2.500.000</h2>
+                        </div>
+                    </div>
+                    <div class="select">
+                        <div class="button">Add to cart</div>
+                        <div class="link">
+                            <div class="div">
+                                <i class="fa-solid fa-sliders"></i> Share
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-sliders"></i> Compare
+                            </div>
+                            <div><i class="fa-solid fa-sliders"></i> Like</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="IMG/carsport.png" alt="" />
+                        <div class="sale">
+                            <p>-50%</p>
+                        </div>
+                        <div class="text">
+                            <h1>Lolito</h1>
+                            <p>Luxury big sofa</p>
+                            <h2>Rp 7.000.000 <span> Rp 14.000.000 </span></h2>
+                        </div>
+                    </div>
+                    <div class="select">
+                        <div class="button">Add to cart</div>
+                        <div class="link">
+                            <div class="div">
+                                <i class="fa-solid fa-sliders"></i> Share
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-sliders"></i> Compare
+                            </div>
+                            <div><i class="fa-solid fa-sliders"></i> Like</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="IMG/carsport.png" alt="" />
+                        <div class="new">
+                            <p>New</p>
+                        </div>
+                        <div class="text">
+                            <h1>Respira</h1>
+                            <p>Outdoor bar table and stool</p>
+                            <h2>Rp 500.000</h2>
+                        </div>
+                    </div>
+                    <div class="select">
+                        <div class="button">Add to cart</div>
+                        <div class="link">
+                            <div class="div">
+                                <i class="fa-solid fa-sliders"></i> Share
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-sliders"></i> Compare
+                            </div>
+                            <div><i class="fa-solid fa-sliders"></i> Like</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="IMG/carsport.png" alt="" />
+                        <div class="sale">
+                            <p>-30%</p>
+                        </div>
+                        <div class="text">
+                            <h1>Syltherine</h1>
+                            <p>Stylish cafe chair</p>
+                            <h2>Rp 2.500.000 <span> Rp 3.5000.000 </span></h2>
+                        </div>
+                    </div>
+                    <div class="select">
+                        <div class="button">Add to cart</div>
+                        <div class="link">
+                            <div class="div">
+                                <i class="fa-solid fa-sliders"></i> Share
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-sliders"></i> Compare
+                            </div>
+                            <div><i class="fa-solid fa-sliders"></i> Like</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="IMG/carsport.png" alt="" />
+                        <div class="text">
+                            <h1>Leviosa</h1>
+                            <p>Stylish cafe chair</p>
+                            <h2>Rp 2.500.000</h2>
+                        </div>
+                    </div>
+                    <div class="select">
+                        <div class="button">Add to cart</div>
+                        <div class="link">
+                            <div class="div">
+                                <i class="fa-solid fa-sliders"></i> Share
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-sliders"></i> Compare
+                            </div>
+                            <div><i class="fa-solid fa-sliders"></i> Like</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="IMG/carsport.png" alt="" />
+                        <div class="sale">
+                            <p>-50%</p>
+                        </div>
+                        <div class="text">
+                            <h1>Lolito</h1>
+                            <p>Luxury big sofa</p>
+                            <h2>Rp 7.000.000 <span> Rp 14.000.000 </span></h2>
+                        </div>
+                    </div>
+                    <div class="select">
+                        <div class="button">Add to cart</div>
+                        <div class="link">
+                            <div class="div">
+                                <i class="fa-solid fa-sliders"></i> Share
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-sliders"></i> Compare
+                            </div>
+                            <div><i class="fa-solid fa-sliders"></i> Like</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="IMG/carsport.png" alt="" />
+                        <div class="new">
+                            <p>New</p>
+                        </div>
+                        <div class="text">
+                            <h1>Respira</h1>
+                            <p>Outdoor bar table and stool</p>
+                            <h2>Rp 500.000</h2>
+                        </div>
+                    </div>
+                    <div class="select">
+                        <div class="button">Add to cart</div>
+                        <div class="link">
+                            <div class="div">
+                                <i class="fa-solid fa-sliders"></i> Share
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-sliders"></i> Compare
+                            </div>
+                            <div><i class="fa-solid fa-sliders"></i> Like</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

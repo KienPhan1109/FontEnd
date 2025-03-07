@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            width: 100%;
+            gap: 10px;
+        }
+        .header {
+            background-color: rgb(173, 14, 83);
+            height: 40vh;
+        }
+        .container_box1 {
+            display: flex;
+            height: 15vh;
+            gap: 10px;
+        }
+        .box1, .box2, .box3 , .box4{
+            width: 25%;
+            background-color: rgb(250, 0, 108);
+        }
+        .container_box2 {
+            display: flex;
+            height: 30vh;
+            gap: 10px;
+        }
+        .box5, .box6{
+            width: 50%;
+            background-color: rgb(255, 55, 178);
+        }
+        .footer {
+            background-color: rgb(242, 38, 160);
+            height: 40vh;
+        }
+        @media (min-width:768px) and (max-width: 1200px){
+            .header {
+                height: 20vh;
+            }
+            .container_box1 {
+                display: grid;
+                grid-template-columns: auto auto;
+                grid-template-rows: auto auto;
+                height: 50vh;
+                gap: 10px;
+            }
+            .box1, .box2, .box3, .box4 {
+                height: 25vh;
+                width: 100%;
+            }  
+            .container_box2 {
+                flex-direction: column;
+                height: 40vh;
+                gap: 10px;
+            }
+            .box5, .box6 {
+                height: 20vh;
+                width: 100%;
+            }  
+            .footer {
+                height: 20vh;
+            }
+        }
+        @media (max-width: 768px){
+            .header {
+                height: 20vh;
+            }
+            .container_box1 {
+                flex-direction: column;
+                height: 80vh;
+                gap: 10px;
+            }
+            .box1, .box2, .box3, .box4 {
+                height: 20vh;
+                width: 100%;
+            }  
+            .container_box2 {
+                flex-direction: column;
+                height: 40vh;
+                gap: 10px;
+            }
+            .box5, .box6 {
+                height: 20vh;
+                width: 100%;
+            }  
+            .footer {
+                height: 20vh;
+            }
+        }
+        .container_box1, .container_box2 {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header"></div>
+        <div class="container_box1">
+            <div class="box1"></div>
+            <div class="box2"></div>
+            <div class="box3"></div>
+            <div class="box4"></div>
+        </div>
+        <div class="container_box2">
+            <div class="box5"></div>
+            <div class="box6"></div>
+        </div>
+        <div class="footer"></div>
+    </div>
+</body>
+</html>

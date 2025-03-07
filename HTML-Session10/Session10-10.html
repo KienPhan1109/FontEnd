@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script
+            src="https://kit.fontawesome.com/75a18646d0.js"
+            crossorigin="anonymous"
+        ></script>
+        <title>Document</title>
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: auto;
+                height: 100vh;
+                background-color: rgb(87, 87, 87);
+            }
+            .container {
+                margin: auto;
+                color: rgb(0, 0, 0);
+                background-color: #ffffff;
+                padding: 50px;
+                box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+                display: flex;
+                justify-content: space-around;
+                gap: 50px;
+            }
+            .container_image {
+                display: flex;
+                align-items: start;
+                justify-content: center;
+            }
+            .small_image {
+                padding: 0px 10px;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+            .small_image img {
+                width: 85px;
+                border-radius: 10px;
+            }
+            .large_image img {
+                width: 500px;
+                border-radius: 10px;
+            }
+            .large_image {
+                padding: 0px 10px;
+            }
+            .price {
+                color: #bfbfbf;
+            }
+            .container_review {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+            }
+            .container_star {
+                color: rgb(253, 221, 63);
+            }
+            .border {
+                height: 20px;
+                border: 1.5px solid #bfbfbf;
+            }
+            .review {
+                color: #bfbfbf;
+            }
+            .grey {
+                color: #8e8e8e;
+            }
+            .container_size {
+                display: flex;
+                gap: 10px;
+            }
+            .size {
+                display: flex;
+                justify-content: center;
+                background-color: #fcdbdb;
+                padding: 5px;
+                width: 20px;
+                border-radius: 5px;
+            }
+            .size:hover {
+                background-color: #ff5454;
+                color: white;
+            }
+            .container_color {
+                display: flex;
+                gap: 10px;
+                margin-bottom: 30px;
+            }
+            .blue {
+                padding: 15px;
+                background-color: rgb(97, 97, 250);
+                border-radius: 50%;
+            }
+            .black {
+                padding: 15px;
+                background-color: black;
+                border-radius: 50%;
+            }
+            .green {
+                padding: 15px;
+                background-color: rgb(22, 194, 42);
+                border-radius: 50%;
+            }
+            .blue:hover {
+                background-color: rgb(107, 15, 255);
+            }
+            .black:hover {
+                background-color: rgb(90, 90, 90);
+            }
+            .green:hover {
+                background-color: rgb(0, 130, 61);
+            }
+            .container_button {
+                display: flex;
+                gap: 10px;
+                padding-bottom: 50px;
+                border-bottom: 1px solid rgb(179, 179, 179);
+            }
+            .index {
+                padding: 15px 15px;
+                display: flex;
+                gap: 30px;
+                border: 1px solid rgb(0, 0, 0);
+                border-radius: 10px;
+            }
+            .add {
+                padding: 15px 35px;
+                border: 1px solid rgb(0, 0, 0);
+                border-radius: 10px;
+            }
+            .compare {
+                padding: 15px 35px;
+                border: 1px solid rgb(0, 0, 0);
+                border-radius: 10px;
+            }
+            .index:hover {
+                background-color: rgb(255, 237, 237);
+            }
+            .add:hover {
+                background-color: rgb(255, 237, 237);
+            }
+            .compare:hover {
+                background-color: rgb(255, 237, 237);
+            }
+            .footer {
+                margin-top: 40px;
+                display: flex;
+                gap: 20px;
+            }
+            .left > .grey {
+                padding: 5px;
+            }
+            .right > .grey {
+                padding: 5px;
+            }
+            .container_icon {
+                padding: 5px;
+                display: flex;
+                gap: 10px;
+                align-items: center;
+            }
+            .small_image img:hover {
+                width: 95px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="container_image">
+                <div class="small_image">
+                    <img src="IMG/basketball.png" alt="" />
+                    <img src="IMG/carsport.png" alt="" />
+                    <img src="IMG/tabletennis.png" alt="" />
+                    <img src="IMG/taekwondo.png" alt="" />
+                </div>
+                <div class="large_image">
+                    <img src="IMG/football.png" alt="" />
+                </div>
+            </div>
+            <div class="container_text">
+                <div class="product">
+                    <h1>Asgaard sofa</h1>
+                </div>
+                <div class="price">
+                    <h3>Rs.250,000.00</h3>
+                </div>
+                <div class="container_review">
+                    <div class="container_star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half"></i>
+                    </div>
+                    <div class="border"></div>
+                    <div class="review">
+                        <p>5 Customer Review</p>
+                    </div>
+                </div>
+                <div class="text">
+                    Setting the bar as one of the loudest speakers in its class,
+                    the <br />
+                    Killburn is a compact, stout-hearted hero with a
+                    well-balanced <br />
+                    audio which boasts a clear midrange and extended highs for a
+                    <br />
+                    sound.
+                </div>
+                <div class="grey">
+                    <p>Size</p>
+                </div>
+                <div class="container_size">
+                    <div class="size">L</div>
+                    <div class="size">XL</div>
+                    <div class="size">XS</div>
+                </div>
+                <div class="grey">
+                    <p>Color</p>
+                </div>
+                <div class="container_color">
+                    <div class="blue"></div>
+                    <div class="black"></div>
+                    <div class="green"></div>
+                </div>
+                <div class="container_button">
+                    <div class="index">
+                        <div>-</div>
+                        <div>1</div>
+                        <div>+</div>
+                    </div>
+                    <div class="add">Add To Cart</div>
+                    <div class="compare">+ Compare</div>
+                </div>
+                <div class="footer">
+                    <div class="left">
+                        <div class="grey">SKU</div>
+                        <div class="grey">Category</div>
+                        <div class="grey">Tags</div>
+                        <div class="grey">Share</div>
+                    </div>
+                    <div class="right">
+                        <div class="grey">: SS001</div>
+                        <div class="grey">: Sofas</div>
+                        <div class="grey">: Sofa, Chair, Home, Shop</div>
+                        <div class="container_icon">
+                            <div class="grey">:</div>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

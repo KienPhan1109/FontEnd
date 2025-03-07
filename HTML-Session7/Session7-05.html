@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/75a18646d0.js" crossorigin="anonymous"></script>
     <title>Document</title>
     <style>
         body {
@@ -52,7 +52,7 @@
         .hide {
             border-bottom: 0px !important;
         }
-        .b1 input {
+        .b1 button {
             padding: 10px;
             background-color: rgb(211, 10, 10);
             color: white;
@@ -65,10 +65,10 @@
             justify-content: center;
             padding-bottom: 10px;
         }
-        .b1:hover input{
+        .b1:hover button{
             background-color: rgb(254, 17, 17);
         }
-        .b2 input {
+        .b2 button {
             padding: 10px;
             background-color: rgb(255, 255, 255);
             color: white;
@@ -82,7 +82,7 @@
             justify-content: center;
             padding-bottom: 20px;
         }
-        .b2:hover input{
+        .b2:hover button{
             background-color: rgb(235, 235, 235);
         }
     </style>
@@ -106,10 +106,14 @@
         </div>
         <div class="button">
             <div class="b1">
-                <input type="button" value="ĐĂNG KÝ">
+                <button>
+                    <i class="fa-solid fa-pen-to-square"></i> ĐĂNG KÝ
+                </button>
             </div>
             <div class="b2">
-                <input type="button" value="Chi tiết">
+                <button>
+                    <i class="fa-solid fa-share-from-square"></i> Chi tiết
+                </button>
             </div>
         </div>
     </div>

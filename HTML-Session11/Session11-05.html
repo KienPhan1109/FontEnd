@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/75a18646d0.js" crossorigin="anonymous"></script>
+    <title>Responsive Layout</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            width: 100%;
+            gap: 10px;
+        }
+        .header {
+            display: flex;
+            justify-content: center;
+            height: 10vh;
+            gap: 10px;
+        }
+        .container_logo{
+            font-size: 50px;
+            color: brown;
+            font-weight: bold;
+            width: 30%;
+        }
+        .hide{
+            font-weight: bold;
+            font-size: 50px;
+            color: white;
+            background-color: brown;
+            padding: 5px 10px;
+            display: none;
+        }
+        .nav{
+            font-size: 40px;
+            color: white;
+            background-color: brown;
+            width: 70%;
+        }
+        .body {
+            display: flex;
+            gap: 10px;
+            width: 100%;
+            height: 60vh;
+        }
+        .main{
+            font-size: 40px;
+            color: white;
+            background-color: brown;
+            width: 70%;
+        }
+        .side{
+            font-size: 40px;
+            color: white;
+            background-color: brown;
+            width: 30%;
+        }
+        .container_col {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto;
+            height: 30vh;
+            gap: 10px;
+            width: 100%;
+        }
+        .col{
+            font-size: 40px;
+            color: white;
+            width: 100%;
+            background-color: brown;
+        }
+        @media (min-width:768px) and (max-width: 1200px){
+            .header {
+                height: 5vh;
+            }
+            .container_logo{
+                width: 30%;
+            }
+            .nav{
+                font-size: 40px;
+                color: white;
+                background-color: brown;
+                width: 70%;
+            }
+            .body {
+                flex-direction: column;
+                gap: 10px;
+                width: 100%;
+            }
+            .main, .side{
+                height: 60vh;
+                width: 100%;
+            }
+            .container_col {
+                display: grid;
+                grid-template-columns: auto auto;
+                grid-template-rows: auto auto auto;
+                height: 45vh;
+                gap: 10px;
+            }
+        }
+        @media (max-width:768px){
+            .header {
+                height: 20vh;
+                flex-direction: column;
+            }
+            .nav {
+                width: 100%;
+                height: 10vh;
+            }
+            .container_logo {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+            }
+            .hide {
+                display: inline-block;
+            }
+            .body {
+                flex-direction: column;
+                gap: 10px;
+                width: 100%;
+            }
+            .main, .side{
+                height: 60vh;
+                width: 100%;
+            }
+            .container_col {
+                display: grid;
+                grid-template-columns: auto auto;
+                grid-template-rows: auto auto auto;
+                height: 45vh;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="container_logo">
+                <div class="logo">LOGO</div>
+                <div class="hide"><i class="fa-solid fa-bars"></i></div>
+            </div>
+            <div class="nav">#nav</div>
+        </div>
+        <div class="body">
+            <div class="main">#main</div>
+            <div class="side">#aside</div>
+        </div>
+        <div class="container_col">
+            <div class="col">.column1</div>
+            <div class="col">.column2</div>
+            <div class="col">.column3</div>
+            <div class="col">.column4</div>
+            <div class="col">.column5</div>
+            <div class="col">.column6</div>
+        </div>
+    </div>
+</body>
+</html>

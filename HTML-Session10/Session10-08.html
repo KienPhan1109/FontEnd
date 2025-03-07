@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/75a18646d0.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            height: 1100px;
+            background-color: rgb(94, 94, 94);
+        }
+        .container {
+            width: 80%;
+            color: rgb(0, 0, 0);
+            background-color: #ffffff;
+            padding: 30px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+            gap: 30px;
+        }
+        .box {
+            display: flex;
+            justify-content: space-evenly;
+            
+        }
+        .box1 img {
+            width: 650px;
+        }
+        .header {
+            position: relative;
+            margin-bottom: 30px;
+        }
+        .links {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            padding: 10px;
+            border-bottom: 1px solid rgb(208, 208, 208);
+            border-top: 1px solid rgb(208, 208, 208);
+        }
+        .links a{
+            text-decoration: none;
+            color: black;
+        }
+        .links a:hover{
+            text-decoration: underline;
+            color: rgb(118, 118, 118);
+            font-weight: bold;
+        }
+        .paper {
+            position: absolute;
+            right: 100px;
+            top: 10px;
+            color: rgb(91, 91, 255);
+        }
+        .image {
+            position: relative;
+        }
+        .caption {
+            position: absolute;
+            background-color: #ffffff;
+            bottom: -30px;
+            left: 15px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+        .caption h2 {
+            padding: 0px 20px;
+        }
+        .text {
+            margin-top: 60px;
+        }
+        .top {
+            background-color: #c8ff00;
+            padding: 8px;
+            width: 110px;
+            margin-bottom: 25px;
+        }
+        .quick {
+            background-color: #c8ff00;
+            padding: 8px;
+            width: 110px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+        .row p{
+            color: rgb(45, 44, 44);
+            padding-bottom: 8px;
+            border-bottom: 1px solid rgb(208, 208, 208);
+        }
+        .row p:hover{
+            background-color: #f8f8f8;
+            padding: 5px;
+        }
+        #none {
+            border: none;
+        }
+        .box2 {
+            width: 350px;
+        }
+        .box3 {
+            width: 350px;
+        }
+        .content {
+            background-color: #ededed;
+            padding: 40px 20px;
+            position: relative;
+            border-radius: 10px;
+        }
+        .text1 {
+            line-height: 30px;
+        }
+        .next {
+            color: rgb(84, 84, 252);
+            font-weight: bold;
+            position: absolute;
+            right: 50px;
+        }
+        .next:hover {
+            text-decoration: underline;
+            color: #d0aeff;
+        }
+        #blue {
+            color: rgb(90, 90, 255);
+        }
+        .signup {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .signup p {
+            color: #cdcdcd;
+        }
+        .signup p:hover {
+            text-decoration: underline;
+        }
+        .signup button {
+            background-color: #6054e6;
+            color: white;
+            border: none;
+            width: 80px;
+            height: 30px;
+        }
+        .signup button:hover {
+            background-color: #1000ba;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="links">
+                <a href="#">World</a>
+                <a href="#">Politics</a>
+                <a href="#">Business</a>
+                <a href="#">Opinion</a>
+                <a href="#">Tech</a>
+                <a href="#">Science</a>
+                <a href="#">Health</a>
+                <a href="#">Sports</a>
+                <a href="#">Entertainment</a>
+                <a href="#">Travel</a>
+                <a href="#">More</a>
+            </div>
+            <div class="paper">
+                <i class="fa-solid fa-wallet"></i> E-PAPER
+            </div>
+        </div>
+        <div class="box">
+            <div class="box1">
+                <div class="image">
+                    <img src="IMG/technology.png" alt="">
+                    <div class="caption">
+                        <h2>
+                            What One Photo Tells Us About North <br>
+                            Korea's Nuclear Program
+                        </h2>
+                    </div>
+                </div>
+                <div class="text">
+                    <p>
+                        Clues from a propaganda photo reveal detail about North Korea's expanding weapons <br>
+                        programs and internal politics.
+                    </p>
+                </div>
+            </div>
+            <div class="box2">
+                <div class="top">
+                    TOP STORIES
+                </div>
+                <div class="row">
+                    <p>
+                        PM unveils Shiva statue in Coimbatore <br>
+                        on Mahashivratri
+                    </p>
+                    <p>
+                        PM Modi: Kanpur train accident was a <br>
+                        conspiracy
+                    </p>
+                    <p>
+                        'Sena, BJP have no option but to join <br>
+                        hands again'
+                    </p>
+                    <p>
+                        Thousands bid adieu to martyred jawan <br>
+                        in Kashmir
+                    </p>
+                    <p>
+                        Jayalalithaa's niece Deepa floats <br>
+                        political outfit
+                    </p>
+                    <p>
+                        'China made mistake of ignoring India's <br>
+                        talent'
+                    </p>
+                    <p id="none">
+                        Jayalalithaa's niece Deepa floats <br>
+                        political outfit
+                    </p>
+                </div>
+            </div>
+            <div class="box2">
+                <div class="content">
+                    <div class="quick">
+                        QUICK BITES
+                    </div>
+                    <div class="title">
+                        <h3>
+                            Stocks Sell Of, Gold Rises <br>
+                            Ahead of Trump Speech: <br>
+                            Markets Wrap
+                        </h3>
+                    </div>
+                    <div class="text1">
+                        Global stocks retreated, erasing <br>
+                        gains for the week as a glum set of <br>
+                        European corporate earnings <br>
+                        compounded investor nervousness <br>
+                        before a major speech from U.S. <br>
+                        President Donald Trump. Gold <br>
+                        extended its rally as the dollar <br>
+                        edged lower
+                    </div>
+                    <div class="next">
+                        Next >
+                    </div>
+                </div>
+                <h3 id="blue">
+                    Get the Quick Bites delivered to <br>
+                    your inbox daily
+                </h3>
+                <div class="signup">
+                    <p>
+                        Enter your email
+                    </p>
+                    <button>
+                        Sign Up
+                    </button>
+                </div>
+        </div>
+    </div>
+</body>
+</html>

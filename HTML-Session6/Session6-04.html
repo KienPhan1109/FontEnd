@@ -1,107 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        table {
-            width: 100%;
-        }
-        body {
-            margin: 20px;
-            padding: 20px;
-            font-family: tahoma;
-        }
-        .header {
-            background-color: rgb(48, 193, 48);
-            padding: 20px;
-            text-align: center;
-            padding-bottom: 40px;
-        }
-        .title {
-            color: white;
-        }
-        .menu a {
-            padding-right: 20px;
-        }
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            table {
+                width: 100%;
+            }
+            body {
+                margin: 20px;
+                padding: 20px;
+                font-family: tahoma;
+            }
+            .header {
+                background-color: rgb(48, 193, 48);
+                padding: 20px;
+                text-align: center;
+                padding-bottom: 40px;
+            }
+            .title {
+                color: white;
+            }
+            .menu a {
+                padding-right: 20px;
+            }
 
-        .chuyenmuc {
-            padding: 20px;
-            padding-bottom: 400px;
-            background-color: rgba(211, 211, 211, 0.441);
-            border: 1px solid gray;
-        }
-        .bai1 {
-            margin-top: 50px;
-            padding-left: 20px;
-            border-bottom: 1px solid gray;
-        }
-        .bai1 img {
-            width: 200px;
-        }
-        .bai2 {
-            padding-left: 20px;
-            border-bottom: 1px solid gray;
-        }
-        .bai2 img {
-            width: 200px;
-        }
-        p {
-            padding: 14px;
-        }
-        .footer {
-            padding: 1px;
-            background-color: rgba(0, 0, 0, 0.756);
-            font-size: 20px;
-            color: white;
-            text-align: center;
-        }
-    </style>
-</head>
-<body>
-    <div class="header">
-        <div class="title">
-            <h1>My Blog</h1>
+            .chuyenmuc {
+                padding: 20px;
+                padding-bottom: 400px;
+                background-color: rgba(211, 211, 211, 0.441);
+                border: 1px solid gray;
+            }
+            .bai1 {
+                margin-top: 50px;
+                padding-left: 20px;
+                border-bottom: 1px solid gray;
+            }
+            .bai1 img {
+                width: 200px;
+            }
+            .bai2 {
+                padding-left: 20px;
+                border-bottom: 1px solid gray;
+            }
+            .bai2 img {
+                width: 200px;
+            }
+            p {
+                padding: 14px;
+            }
+            .footer {
+                padding: 1px;
+                background-color: rgba(0, 0, 0, 0.756);
+                font-size: 20px;
+                color: white;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <div class="title">
+                <h1>My Blog</h1>
+            </div>
+            <div class="menu">
+                <a href="">Home</a>
+                <a href="">Categories</a>
+                <a href="">About</a>
+            </div>
         </div>
-        <div class="menu">
-            <a href="">Home</a>
-            <a href="">Categories</a>
-            <a href="">About</a>
+        <div class="body">
+            <table>
+                <tr>
+                    <td rowspan="2">
+                        <div class="chuyenmuc">
+                            <h2>Chuyên mục</h2>
+                            <ul>
+                                <li><a href="">CSS</a></li>
+                                <li><a href="">JavaScript</a></li>
+                                <li><a href="">HTML</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="bai1">
+                            <h2>Bài viết 1</h2>
+                            <img src="IMG/java1.png" alt="" />
+                            <p>Đây là nội dung tóm tắt của bài viết 1.</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="bai2">
+                            <h2>Bài viết 2</h2>
+                            <img src="IMG/java2.png" alt="" />
+                            <p>Đây là nội dung tóm tắt của bài viết 2.</p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
         </div>
-    </div>
-    <div class="body">
-        <table>
-            <tr>
-                <td rowspan="2">
-                    <div class="chuyenmuc">
-                        <h2>Chuyên mục</h2>
-                        <ul>
-                            <li><a href="">CSS</a></li>
-                            <li><a href="">JavaScript</a></li>
-                            <li><a href="">HTML</a></li>
-                        </ul>
-                    </div>
-                </td>
-                <td>
-                    <div class="bai1">
-                        <h2>Bài viết 1</h2>
-                        <img src="IMG/java1.png" alt="">
-                        <p>Đây là nội dung tóm tắt của bài viết 1.</p>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td><div class="bai2">
-                    <h2>Bài viết 2</h2>
-                    <img src="IMG/java2.png" alt="">
-                    <p>Đây là nội dung tóm tắt của bài viết 2.</p>
-                </div></td>
-            </tr>
-        </table>
-    </div>
-    <div class="footer">
-        <p>Liên hệ: email@example.com</p>
-    </div>
-</body>
+        <div class="footer">
+            <p>Liên hệ: email@example.com</p>
+        </div>
+    </body>
 </html>

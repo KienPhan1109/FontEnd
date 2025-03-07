@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <style>
+        * {
+            font-family: monospace;
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            width: 100%;
+        }
+        .container_search {
+            border-radius: 40px 40px 0px 0px;
+            background-color: rgb(224, 224, 224);
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 20px 0px;
+            border: 2px solid black;
+        }
+        .search{
+            font-size: 20px;
+            background-color: white;
+            color: rgb(163, 163, 163);
+            border: 2px solid rgb(199, 199, 199);
+            padding-right: 300px;
+            padding-left: 10px;
+            border-radius: 4px;
+        }
+        .icon {
+            display: flex;
+            gap: 10px;
+        }
+        .icon p{
+            padding: 8px;
+            border: 2px solid rgb(199, 199, 199);
+            background-color: white;
+            border-radius: 50%;
+        }
+        .desktop {
+            border: 3px solid black;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            width: 100%;
+            border-radius: 0px 0px 40px 40px;
+        }
+        .header {
+            border-top: 50px solid #7a7aed;
+            height: 30vh;
+            background-color: #b0b0ff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            color: #5e5e5e;
+        }
+        .container_feature{
+            font-size: 40px;
+            color: #5e5e5e;
+            display: flex;
+            height: 40vh;
+            width: 100%;
+        }
+        .signup1{
+            display: none;
+        }
+        #fea1 {
+            background-color: #e7ff6d;
+            width: 33%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #fea2 {
+            background-color: #389fff;
+            width: 34%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #fea3 {
+            background-color: #ff9d3c;
+            width: 33%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .signup1 {
+            height: 40vh;
+            background-color: #bcf8ff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            color: #5e5e5e;
+            display: none;
+        }
+        .signup2 {
+            height: 20vh;
+            background-color: #bcf8ff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            color: #5e5e5e;
+        }
+        .content {
+            height: 30vh;
+            background-color: #c2c2c2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            color: #5e5e5e;
+            border-radius: 0px 0px 40px 40px;
+        }
+        .body {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            width: 100%;
+        }
+        
+        @media (min-width:768px) and (max-width: 1200px){
+            .header {
+                height: 20vh;
+            }
+            .body {
+                flex-direction: column-reverse;
+            }
+            .content {
+                border-radius: 0px 0px 0px 0px;
+            }
+            .signup1{
+                display: flex;
+                text-align: center;
+                justify-content: center;
+                width: 100%;
+                height: 30vh;
+            }
+            .signup2{
+                display: none;
+            }
+            .container_feature{
+                display: grid;
+                grid-template-columns: auto auto;
+                grid-template-rows: auto auto;
+                height: 60vh;
+            }
+            #fea1 {
+                width: 100%;
+                height: 30vh;
+            }
+            #fea2 {
+                width: 100%;
+                height: 30vh;
+                border-radius: 0px 0px 0px 40px;
+            }
+            #fea3 {
+                width: 100%;
+                height: 30vh;
+                border-radius: 0px 0px 40px 0px;
+            }
+        }
+        @media (max-width:768px){
+            .body {
+                flex-direction: column-reverse;
+            }
+            .content {
+                border-radius: 0px 0px 0px 0px ;
+            }
+            .signup1{
+                height: 10vh;
+            }
+            .container_feature{
+                display: flex;
+                flex-direction: column;
+                height: 60vh;
+            }
+            #fea1 {
+                width: 100%;
+                height: 20vh;
+            }
+            #fea2 {
+                width: 100%;
+                height: 20vh;
+            }
+            #fea3 {
+                width: 100%;
+                height: 20vh;
+                border-radius: 0px 0px 40px 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="container_search">
+            <div class="search">
+                EXAMPLEHTML
+            </div>
+            <div class="icon">
+                <p></p>
+                <p></p>
+                <p></p>
+            </div>
+        </div>
+        <div class="desktop">
+            <div class="header">(HEADER)</div>
+            <div class="body">
+                <div class="container_feature">
+                    <div class="signup1">(SIGN UP)</div>
+                    <div id="fea1">(FEATURE)</div>
+                    <div id="fea2">(FEATURE)</div>
+                    <div id="fea3">(FEATURE)</div>
+                </div>
+                <div class="signup2">(SIGN UP)</div>
+                <div class="content">(CONTENT)</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

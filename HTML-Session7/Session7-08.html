@@ -1,145 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Document</title>
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: auto;
-            height: 1000px;
-            background-color: rgb(214, 234, 252);
-        }
-        .container {
-            width: 450px;
-            background-color: white;
-            padding: 30px;
-            border-radius: 20px;
-            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-        }
-        .inactive p {
-            width: 90px;
-            background-color: rgb(214, 243, 179);
-            color: rgb(248, 12, 12);
-            border-radius: 5px;
-            padding: 2px;
-            text-align: center;
-            font-weight: bold;
-            border: 1px solid rgb(236, 146, 146);
-        }
-        .box1 {
-            padding: 5px 0px;
-            font-weight: bold;
-            color: rgb(37, 35, 35);
-        }
-        .highlight {
-            color: rgb(69, 69, 245);
-            font-weight: 400;
-        }
-        .progress {
-            margin-right: 30px;
-        }
-        .text {
-            display: flex;
-            justify-content: space-between;
-            font-weight: bold;
-            color: rgb(109, 109, 109);
-            font-size: 17px;
-        }
-        .text1 {
-            color: rgb(0, 0, 0);
-            font-weight: 700;
-        }
-        .backrange {
-            background-color: rgb(243, 230, 180);
-            width: 100%;
-            height: 8px;
-            border-radius: 10px;
-        }
-        .fontrange {
-            position: relative;
-            bottom: 8px;
-            background-color: rgb(255, 85, 0);
-            width: 76%;
-            height: 8px;
-            border-radius: 10px;
-        }
-        .box2 {
-            padding: 10px 0px;
-            font-weight: bold;
-            color: rgb(45, 44, 44);
-            font-size: 16px;
-        }
-        .box2 span{
-            color: rgb(134, 134, 134);
-        }
-        img {
-            width: 50px;
-            border-radius: 50px;
-        }
-        .image {
-            position: relative;
-        }
-        .img2 {
-            position: absolute;
-            left: 40px;
-            bottom: 2px;
-        }
-        .footer {
-            display: flex;
-            justify-content: space-between;
-            margin-right: 30px;
-        }
-        .task {
-            font-size: 18px;
-        }
-        .task span {
-            font-weight: bold;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <div class="title">
-            <h1>Water resistant mosquito...</h1>
-        </div>
-        <div class="inactive">
-            <p>INACTIVE</p>
-        </div>
-        <div class="box1">
-            <p><i class="fa fa-solid fa-user"></i> Client: <span class="highlight">Monsters.Inc</span></p>
-            <p><i class="fa fa-solid fa-address-card"></i> Budget: 10,500$</p>
-        </div>
-        <div class="progress">
-            <div class="text">
-                <p>Progress</p>
-                <p class="text1">76%</p>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script
+            src="https://kit.fontawesome.com/75a18646d0.js"
+            crossorigin="anonymous"
+        ></script>
+        <title>Document</title>
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: auto;
+                height: 1000px;
+                background-color: rgb(110, 110, 110);
+            }
+            .container {
+                width: 450px;
+                background-color: white;
+                padding: 30px;
+                border-radius: 20px;
+                box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+            }
+            .inactive p {
+                width: 90px;
+                background-color: rgb(214, 243, 179);
+                color: rgb(248, 12, 12);
+                border-radius: 5px;
+                padding: 2px;
+                text-align: center;
+                font-weight: bold;
+                border: 1px solid rgb(236, 146, 146);
+            }
+            .box1 {
+                padding: 5px 0px;
+                font-weight: bold;
+                color: rgb(37, 35, 35);
+            }
+            .highlight {
+                color: rgb(69, 69, 245);
+                font-weight: 400;
+            }
+            .progress {
+                margin-right: 30px;
+            }
+            .text {
+                display: flex;
+                justify-content: space-between;
+                font-weight: bold;
+                color: rgb(109, 109, 109);
+                font-size: 17px;
+            }
+            .text1 {
+                color: rgb(0, 0, 0);
+                font-weight: 700;
+            }
+            .backrange {
+                background-color: rgb(243, 230, 180);
+                width: 100%;
+                height: 8px;
+                border-radius: 10px;
+            }
+            .fontrange {
+                position: relative;
+                bottom: 8px;
+                background-color: rgb(255, 85, 0);
+                width: 76%;
+                height: 8px;
+                border-radius: 10px;
+            }
+            .box2 {
+                padding: 10px 0px;
+                font-weight: bold;
+                color: rgb(45, 44, 44);
+                font-size: 16px;
+            }
+            .box2 span {
+                color: rgb(134, 134, 134);
+            }
+            img {
+                width: 50px;
+                border-radius: 50px;
+            }
+            .image {
+                position: relative;
+            }
+            .img2 {
+                position: absolute;
+                left: 40px;
+                bottom: 2px;
+            }
+            .footer {
+                display: flex;
+                justify-content: space-between;
+                margin-right: 30px;
+            }
+            .task {
+                font-size: 18px;
+            }
+            .task span {
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="title">
+                <h1>Water resistant mosquito...</h1>
             </div>
-            <div class="backrange"></div>
-            <div class="fontrange"></div>
-        </div>
-        <div class="box2">
-            <p>Started: <span>8th Mar. 2021</span></p>
-            <p>Deadline: <span>15th Sept. 2022</span></p>
-        </div>
-        <div class="footer">
-            <div class="image">
-                <div class="img1">
-                    <img src="IMG/1.png" alt="">
+            <div class="inactive">
+                <p>INACTIVE</p>
+            </div>
+            <div class="box1">
+                <p>
+                    <i class="fa fa-solid fa-user"></i> Client:
+                    <span class="highlight">Monsters.Inc</span>
+                </p>
+                <p>
+                    <i class="fa fa-solid fa-address-card"></i> Budget: 10,500$
+                </p>
+            </div>
+            <div class="progress">
+                <div class="text">
+                    <p>Progress</p>
+                    <p class="text1">76%</p>
                 </div>
-                <div class="img2">
-                    <img src="IMG/KienPhan.jpg" alt="">
+                <div class="backrange"></div>
+                <div class="fontrange"></div>
+            </div>
+            <div class="box2">
+                <p>Started: <span>8th Mar. 2021</span></p>
+                <p>Deadline: <span>15th Sept. 2022</span></p>
+            </div>
+            <div class="footer">
+                <div class="image">
+                    <div class="img1">
+                        <img src="IMG/1.png" alt="" />
+                    </div>
+                    <div class="img2">
+                        <img src="IMG/KienPhan.jpg" alt="" />
+                    </div>
+                </div>
+                <div class="task">
+                    <p>
+                        <i class="fa fa-solid fa-list-check"></i>
+                        <span>125</span> Task
+                    </p>
                 </div>
             </div>
-            <div class="task">
-                <p><i class="fa fa-solid fa-list-check"></i> <span>125</span> Task</p>
-            </div>
         </div>
-    </div>
-</body>
+    </body>
 </html>

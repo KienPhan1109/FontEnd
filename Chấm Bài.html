@@ -1,83 +1,68 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clubs Ranking</title>
+    <link rel="stylesheet" href="style6.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f8f9fa;
-            margin: 20px;
-        }
-        .ranking-table {
-            width: 80%;
-            margin: auto;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        }
-        .ranking-table th, .ranking-table td {
-          padding-left: 10px;
-            padding: 12px;
-            text-align: left;
-            border-bottom: 1px solid #ddd;
-        }
-        .ranking-table th {
-            background-color: #f2f2f2;
-        }
-        .ranking-table tr:hover {
-            background-color: #f1f1f1;
-        }
-        .club-name {
-            display: flex;
-            align-items: center;
-        }
-        .club-name img {
-            width: 20px;
-            height: 20px;
-            margin-right: 10px;
-            margin-left: 50px;
-        }
+      .colorbr1{
+    background-color: rgb(69, 153, 201);
+    width:500px;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+.colorbr2{
+    background-color: white;
+    width:480px;
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+ 
+}
+
+input{
+    padding-left: 40px;
+    width:300px;
+    height: 6vh;
+    border-radius: 15px;
+    border:none;
+    outline: none;
+}
+
+.icon2{
+    gap:20px;
+    display: flex;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+
+.i:nth-child(1){
+    font-size: 40px;
+    margin-right: 40px; 
+}
+
+
     </style>
 </head>
 <body>
-    <h2 style="text-align: center;">Clubs Ranking</h2>
-    <table class="ranking-table">
-        <tr>
-            <th>Club</th>
-            <th>GP</th>
-            <th>W</th>
-            <th>D</th>
-            <th>L</th>
-            <th>F</th>
-            <th>A</th>
-            <th>GD</th>
-        </tr>
-        <tr>
-            <td class="club-name"><img src="city.png" alt="Man City">Manchester City</td>
-            <td>38</td><td>29</td><td>6</td><td>3</td><td>99</td><td>26</td><td>73</td>
-        </tr>
-        <tr>
-            <td class="club-name"><img src="liverpool.png" alt="Liverpool">Liverpool</td>
-            <td>38</td><td>28</td><td>8</td><td>2</td><td>94</td><td>26</td><td>68</td>
-        </tr>
-        <tr>
-            <td class="club-name"><img src="chelsea.png" alt="Chelsea">Chelsea</td>
-            <td>38</td><td>21</td><td>11</td><td>6</td><td>76</td><td>33</td><td>43</td>
-        </tr>
-        <tr>
-            <td class="club-name"><img src="tottenham.png" alt="Tottenham">Tottenham Hotspur</td>
-            <td>38</td><td>22</td><td>5</td><td>11</td><td>69</td><td>40</td><td>29</td>
-        </tr>
-        <tr>
-            <td class="club-name"><img src="arsenal.png" alt="Arsenal">Arsenal</td>
-            <td>38</td><td>22</td><td>3</td><td>13</td><td>61</td><td>48</td><td>13</td>
-        </tr>
-        <tr>
-            <td class="club-name"><img src="manutd.png" alt="Manchester United">Manchester United</td>
-            <td>38</td><td>16</td><td>10</td><td>12</td><td>57</td><td>57</td><td>0</td>
-        </tr>
-    </table>
+    
+    <div class="colorbr1">
+        <div class="colorbr2">
+            <i class="fa fa-search search-icon"></i>  
+            <input type="text" name="search" placeholder="nhập từ khóa tìm kiếm ">
+            <div class="icon2">
+                <i class="fa fa-microphone"></i>
+                <i class="fa fa-camera"></i>
+            </div>
+    </div>
 </body>
 </html>

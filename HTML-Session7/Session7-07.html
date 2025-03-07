@@ -1,110 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Document</title>
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: auto;
-            height: 1000px;
-            background-color: rgb(214, 234, 252);
-        }
-        .container {
-            width: 400px;
-            background-color: white;
-            padding: 10px;
-            border-radius: 20px;
-            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-        }
-        .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-weight: bold;
-            font-size: 20px;
-            border-bottom: 1px solid rgb(191, 176, 176);
-            padding: 0px 10px;
-        }
-        .body {
-            padding: 30px 10px;
-        }
-        
-        td {
-            padding-bottom: 5px;
-        }
-        #input1 {
-            height: 20px;
-            width: 200%;
-        }
-        #input2 {
-            height: 45px;
-            width: 200%;
-        }
-        .body {
-            border-bottom: 1px solid rgb(191, 176, 176);
-        }
-        .footer {
-            display: flex;
-            justify-content: end;
-            padding: 20px 10px;
-        }
-        .b1 {
-            padding: 10px;
-            margin-right: 10px;
-            background-color: rgb(104, 99, 99);
-            color: white;
-            border: none;
-            border-radius: 10px;
-        }
-        .b2 {
-            padding: 10px;
-            background-color: rgb(162, 31, 255);
-            color: white;
-            border: none;
-            border-radius: 10px;
-        }
-        .b1:hover{
-            background-color: rgb(78, 78, 78);
-        }
-        .b2:hover{
-            background-color: rgb(131, 109, 255);
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <div class="header">
-            <p>New message to @mdo</p>
-            <p>X</p>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <title>Document</title>
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: auto;
+                height: 1000px;
+                background-color: rgb(125, 125, 125);
+            }
+            .container {
+                width: 400px;
+                background-color: white;
+                padding: 10px;
+                border-radius: 20px;
+                box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+            }
+            .header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-weight: bold;
+                font-size: 20px;
+                border-bottom: 1px solid rgb(191, 176, 176);
+                padding: 0px 10px;
+            }
+            .body {
+                padding: 30px 10px;
+            }
+
+            td {
+                padding-bottom: 5px;
+            }
+            #input1 {
+                height: 20px;
+                width: 200%;
+            }
+            #input2 {
+                height: 45px;
+                width: 200%;
+            }
+            .body {
+                border-bottom: 1px solid rgb(191, 176, 176);
+            }
+            .footer {
+                display: flex;
+                justify-content: end;
+                padding: 20px 10px;
+            }
+            .b1 {
+                padding: 10px;
+                margin-right: 10px;
+                background-color: rgb(104, 99, 99);
+                color: white;
+                border: none;
+                border-radius: 10px;
+            }
+            .b2 {
+                padding: 10px;
+                background-color: rgb(162, 31, 255);
+                color: white;
+                border: none;
+                border-radius: 10px;
+            }
+            .b1:hover {
+                background-color: rgb(78, 78, 78);
+            }
+            .b2:hover {
+                background-color: rgb(131, 109, 255);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <p>New message to @mdo</p>
+                <p>X</p>
+            </div>
+            <div class="body">
+                <form action="">
+                    <table>
+                        <tr>
+                            <td><label for="input1">Recipient:</label></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input
+                                    type="text"
+                                    placeholder="@mdo"
+                                    id="input1"
+                                />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="input2">Message:</label></td>
+                        </tr>
+                        <tr>
+                            <td><textarea name="" id="input2"></textarea></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div class="footer">
+                <button class="b1">Close</button>
+                <button class="b2">Send message</button>
+            </div>
         </div>
-        <div class="body">
-            <form action="">
-                <table>
-                    <tr>
-                        <td><label for="input1">Recipient:</label></td>
-                    </tr>
-                    <tr>
-                        <td><input type="text" placeholder="@mdo" id="input1"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="input2">Message:</label></td>
-                    </tr>
-                    <tr>
-                        <td><textarea name="" id="input2"></textarea></td>
-                    </tr>
-                </table>
-            </form>
-        </div>
-        <div class="footer">
-            <button class="b1">Close</button>
-            <button class="b2">Send message</button>
-        </div>
-    </div>
-</body>
+    </body>
 </html>

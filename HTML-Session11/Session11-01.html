@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Responsive Layout</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            .container {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                width: 100%;
+            }
+            .header {
+                background-color: red;
+                height: 15vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 24px;
+                font-weight: bold;
+                color: white;
+            }
+            .body {
+                display: flex;
+                height: 70vh;
+            }
+            .sidebar1,
+            .sidebar2 {
+                width: 10%;
+                background-color: green;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 18px;
+                font-weight: bold;
+            }
+            .small_body {
+                background-color: yellow;
+                padding: 20px;
+                width: 80%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .footer {
+                background-color: blue;
+                height: 15vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 24px;
+                font-weight: bold;
+                color: white;
+            }
+            @media (max-width: 1024px) {
+                .body {
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .sidebar1,
+                .sidebar2 {
+                    width: 100%;
+                    height: 10vh;
+                }
+                .sidebar1 {
+                    background-color: green;
+                }
+                .sidebar2 {
+                    background-color: pink;
+                }
+                .small_body {
+                    width: 100%;
+                    height: 50vh;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">Header</div>
+            <div class="body">
+                <div class="sidebar1">Sidebar 1</div>
+                <div class="small_body">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Veniam, possimus?<br />
+                    Assumenda, consequuntur! Accusamus nihil omnis laborum est
+                    beatae aut esse.<br />
+                    Doloribus incidunt totam in ratione a magni fugit sequi
+                    iure.<br />
+                    Perferendis non enim impedit. Est expedita quidem officiis
+                    nemo quisquam!<br />
+                    Placeat nisi iure quam labore exercitationem perspiciatis
+                    odit incidunt numquam.<br />
+                    Illum velit ad repellat porro excepturi quibusdam veniam
+                    aperiam provident.<br />
+                    Adipisci veniam laboriosam harum aperiam fuga suscipit fugit
+                    voluptates assumenda.<br />
+                    Illum maiores numquam minus ea voluptatum. Nisi qui harum
+                    dicta!<br />
+                    Nihil corrupti nostrum possimus facilis libero doloribus
+                    suscipit dolore blanditiis!<br />
+                    Quaerat modi molestias aspernatur odit quod est distinctio
+                    obcaecati aut?<br />
+                </div>
+                <div class="sidebar2">Sidebar 2</div>
+            </div>
+            <div class="footer">Footer</div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <style>
+        body {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: rgb(78, 78, 78);
+        }
+        * {
+            font-family: monospace;
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .container {
+            background-color: #c7c7c7;
+            padding: 20px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+            width: 100%;
+            margin: auto 40px;
+        }
+        .body {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            width: 100%;
+            height: 50vh;
+            gap: 30px;
+        }
+        .sidebar1 {
+            font-size: 60px;
+            font-weight: bold;
+            padding-top: 20px;
+            width: 25%;
+            background-color: rgb(54, 52, 52);
+            color: white;
+        }
+        .sidebar2 {
+            font-size: 20px;
+            padding-top: 30px;
+            width: 25%;
+            background-color: rgb(54, 52, 52);
+            color: white;
+        }
+        .sidebar1:hover{
+            background-color: black;
+        }
+        .sidebar2:hover{
+            background-color: black;
+        }
+        .small_body {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            text-align: left;
+        }
+        .box{
+            background-color: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+        .box:hover{
+            background-color: rgb(226, 226, 226);
+        }
+        h1 {
+            font-size: 40px;
+            font-weight: bold;
+        }
+        p {
+            font-size: 20px;
+        }
+        @media (min-width:768px) and (max-width: 1200px){
+            .body {
+                display: grid;
+                grid-template-columns: auto auto;
+                grid-template-rows: auto;
+            }
+            .sidebar1{
+                width: 100%;
+                font-size: 40px;
+            }
+            .small_body{
+                width: 100%;
+            }
+            .box {
+                padding: 25px 150px 25px 30px;
+            }
+            h1 {
+                font-size: 25px;
+            }
+            p{
+                font-size: 17px;
+            }
+            .sidebar2{
+                display: flex;
+                align-items: center;
+                justify-items: center;
+                height: 7vh;
+                width: 100%;
+                padding: 0px 30px;
+                font-size: 18px;
+            }
+        }
+        @media (max-width:768px){
+            .body {
+                display: flex;
+                flex-direction: column;
+            }
+            .sidebar1{
+                width: 100%;
+                font-size: 40px;
+                height: 8vh;
+            }
+            .small_body{
+                width: 100%;
+                gap: 20px;
+            }
+            .box {
+                padding: 18px;
+                border-radius: 8px;
+            }
+            h1 {
+                font-size: 23px;
+            }
+            p{
+                font-size: 15px;
+            }
+            .sidebar2{
+                height: 8vh;
+                width: 100%;
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="body">
+            <div class="sidebar1">Rikkei</div>
+            <div class="small_body">
+                <div class="box">
+                    <h1>About Me</h1>
+                    <p>
+                        This is the section where I introduce myself.
+                    </p>
+                </div>
+                <div class="box">
+                    <h1>My Skills</h1>
+                    <p>
+                        Here are the technologies I know.
+                    </p>
+                </div>
+                <div class="box">
+                    <h1>Projects</h1>
+                    <p>
+                        These are some of the projects I have worked on.
+                    </p>
+                </div>
+            </div>
+            <div class="sidebar2">Contact: rikkei@gmail.com</div>
+        </div>
+    </div>
+</body>
+</html>
