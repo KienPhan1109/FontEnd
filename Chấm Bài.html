@@ -3,66 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style6.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
     <style>
-      .colorbr1{
-    background-color: rgb(69, 153, 201);
-    width:500px;
-    height: 30vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
- 
-}
-
-.colorbr2{
-    background-color: white;
-    width:480px;
-    height: 7vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 30px;
- 
-}
-
-input{
-    padding-left: 40px;
-    width:300px;
-    height: 6vh;
-    border-radius: 15px;
-    border:none;
-    outline: none;
-}
-
-.icon2{
-    gap:20px;
-    display: flex;
-    font-size: 20px;
-    margin-right: 20px;
-}
-
-
-.i:nth-child(1){
-    font-size: 40px;
-    margin-right: 40px; 
-}
-
-
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: rgb(71, 71, 71);
+        }
+        .box {
+            width: 200px;
+            height: 100px;
+            background-color: rgba(7, 172, 67, 0.833);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            margin: 5px;
+            color: white;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto;
+            grid-template-rows: auto auto auto auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+        @media (max-width:768px){
+            .container{
+                grid-template-columns: auto auto auto auto;
+            }
+        }
+        @media (max-width:480px){
+            .container{
+                grid-template-columns: auto auto;
+            }
+        }
     </style>
 </head>
 <body>
-    
-    <div class="colorbr1">
-        <div class="colorbr2">
-            <i class="fa fa-search search-icon"></i>  
-            <input type="text" name="search" placeholder="nhập từ khóa tìm kiếm ">
-            <div class="icon2">
-                <i class="fa fa-microphone"></i>
-                <i class="fa fa-camera"></i>
-            </div>
+    <div class="container">
+        <div class="box">
+            1
+        </div>
+        <div class="box">
+            2
+        </div>
+        <div class="box">
+            3
+        </div>
+        <div class="box">
+            4
+        </div>
+        <div class="box">
+            5
+        </div>
+        <div class="box">
+            6
+        </div>
+        <div class="box">
+            7
+        </div>
+        <div class="box">
+            8
+        </div>
+        <div class="box">
+            9
+        </div>
+        <div class="box">
+            10
+        </div>
+        <div class="box">
+            11
+        </div>
+        <div class="box">
+            12
+        </div>
     </div>
 </body>
 </html>

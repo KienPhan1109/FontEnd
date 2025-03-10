@@ -12,20 +12,13 @@
         />
     </head>
     <body>
-        <div class="btn-group">
-            <button
-                type="button"
-                class="btn btn-danger dropdown-toggle"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-            >
-                Chọn môn học
-            </button>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">HTML</a></li>
-                <li><a class="dropdown-item" href="#">CSS</a></li>
-                <li><a class="dropdown-item" href="#">JS</a></li>
-            </ul>
+        <div class="container" style="width: 15%;">
+            <select class="form-select  bg-danger text-white" aria-label="Default select example">
+                <option selected>Chọn môn học</option>
+                <option value="1">HTML</option>
+                <option value="2">CSS</option>
+                <option value="3">JS</option>
+            </select>
         </div>
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
