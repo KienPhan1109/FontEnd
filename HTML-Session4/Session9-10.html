@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=`, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/75a18646d0.js" crossorigin="anonymous"></script>
+    <style>
+        body{
+            font-family: monospace;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .header{
+            height: 17vh;
+            background-color: rgb(0, 132, 255);
+        }
+        .container_img{
+            font-size: 20px;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            gap: 20px;
+            color: white;
+        }
+        .container_img img{
+            width: 30px;
+            border-radius: 50% ;
+        }
+        .authentication{
+            padding: 10px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: white;
+        }
+        .title{
+            font-size: 25px;
+            font-weight: bold;
+        }
+        .container_icon{
+            font-size: 20px;
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
+        }
+        .web_button{
+            border-radius: 5px;
+            border: 1px solid white;
+            padding: 5px 10px;
+        }
+        .web_button:hover{
+            background-color: rgb(91, 91, 243);
+        }
+        .icon{
+            background-color: white;
+            height: 25px;
+            width: 25px;
+            border-radius: 50%;
+            color: rgb(21, 21, 21);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .icon:hover{
+            background-color: rgb(57, 134, 251);
+            color: white;
+        }
+        .container_link{
+            display: flex;
+            justify-content: start;
+            padding: 10px 30px;
+            gap: 40px;
+        }
+        .link a{
+            font-size: 25px;
+            color: white;
+            text-decoration: none;
+        }
+        .link a:hover{
+            color: rgb(214, 214, 214);
+            text-decoration: underline;
+        }
+        .body {
+            height: 40vh;
+            background-color: rgb(238, 245, 251);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container_search{
+            color: rgb(177, 179, 177);
+            font-size: 25px;
+            display: flex;
+            align-items: center;
+            background-color: rgb(243, 244, 244);
+            padding: 20px 50px;
+            width:1650px;
+            border: 1px solid rgb(224, 221, 221);
+            border-radius: 10px 10px 0px 0px;
+        }
+        .container_search:hover{
+            background-color: rgb(214, 247, 247);
+        }
+        .icon_search{
+            margin-right: 30px;
+        }
+        .search{
+            margin-right: 600px;
+        }
+        .button_add{
+            padding: 10px 20px;
+            border-radius: 10px;
+            color: white;
+            background-color: rgb(0, 132, 255);
+            margin-right: 30px;
+        }
+        .button_add:hover{
+            background-color: rgb(17, 106, 183);
+        }
+        .project{
+            color: rgb(123, 124, 123);
+            font-size: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 20vh;
+            width:1650px;
+            border: 1px solid rgb(224, 221, 221);
+            background-color: white;
+            border-radius: 0px 0px 10px 10px;
+            border-bottom: 2px solid rgb(183, 183, 183);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="container_img">
+                Go to docs <i class="fa-solid fa-bell"></i>
+                <img src="IMG/hanh.png" alt="">
+            </div>
+            <div class="authentication">
+                <div class="title">
+                    <h1>Authentication</h1>
+                </div>
+                <div class="container_icon">
+                    <div class="web_button">
+                        Web setup
+                    </div>
+                    <div class="icon">
+                        <i class="fa-solid fa-question"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="container_link">
+                <div class="link">
+                    <a href="">Users</a>
+                </div>
+                <div class="link">
+                    <a href="">Sign-in method</a>
+                </div>
+                <div class="link">
+                    <a href="">Templates</a>
+                </div>
+                <div class="link">
+                    <a href="">Usage</a>
+                </div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="small_body">
+                <div class="container_search">
+                    <div class="icon_search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="search">
+                        Search by email address, phone number, or user UID 
+                    </div>
+                    <div class="button_add">
+                        Add user
+                    </div>
+                    <div class="icon_reset">
+                        <i class="fa-solid fa-rotate-right"></i>
+                    </div>
+                </div>
+                <div class="project">
+                    No users for this project yet
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

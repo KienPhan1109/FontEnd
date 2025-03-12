@@ -3,84 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style5.css">
     <title>Document</title>
     <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: rgb(71, 71, 71);
-        }
-        .box {
-            width: 200px;
-            height: 100px;
-            background-color: rgba(7, 172, 67, 0.833);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 10px;
-            margin: 5px;
-            color: white;
-        }
-        .container {
-            display: grid;
-            grid-template-columns: auto auto auto auto auto auto;
-            grid-template-rows: auto auto auto auto;
-            background-color: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-        }
-        @media (max-width:768px){
-            .container{
-                grid-template-columns: auto auto auto auto;
-            }
-        }
-        @media (max-width:480px){
-            .container{
-                grid-template-columns: auto auto;
-            }
-        }
+        .container{
+    width: 40%;
+    height: 100vh;
+    position: relative;
+    
+}
+
+
+span{
+    background-color: #9f4a4b;
+    color: white;
+    margin-left: 30px;
+    display:none;
+}
+
+
+.item2{
+    grid-template-columns: 3fr 1fr;
+    height: 40vh;
+}
+
+.main,.aside, .block,.nav{
+    background-color: #9f4a4b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+
+.item2,.item3,.item1{
+    display: grid;
+    gap: 10px;
+    margin:10px 0 10px 0;
+
+}
+
+.item3{
+    grid-template-columns:repeat(3,1fr);
+    height: 20vh;
+}
+
+.item1{
+    grid-template-columns:repeat(2,1fr);
+    height: 10vh;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e6e7e7;
+}
+
+.LOGO{
+    font-size: 60px;
+    height: 10vh;
+    color: #9f4a4b;
+    font-weight: 800;
+}
+
+
+.nav{
+    background-color: #9f4a4b;
+}
+
+@media (max-width:1200px) {
+    .item2{
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 1fr;
+
+    }
+
+    .item3{
+        grid-template-columns: repeat(2, 1fr);
+        height: 20vh;
+    }
+}
+
+@media (max-width:768px) {
+    span{
+        display: inline-block;
+        position: absolute;
+
+    }
+    .item3{
+        grid-template-columns: 1fr;
+    }
+    .item1{
+       grid-template-columns: 1fr;
+    }
+}
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="box">
-            1
+        <div class="item1">
+            <div class="LOGO">LOGO  <span>&#9776;</span></div>
+        <div class="nav">#NAV</div>
         </div>
-        <div class="box">
-            2
+
+
+        <div class="item2"> 
+            <div class="main">#MAIN</div>
+            <div class="aside">#aside</div>
         </div>
-        <div class="box">
-            3
-        </div>
-        <div class="box">
-            4
-        </div>
-        <div class="box">
-            5
-        </div>
-        <div class="box">
-            6
-        </div>
-        <div class="box">
-            7
-        </div>
-        <div class="box">
-            8
-        </div>
-        <div class="box">
-            9
-        </div>
-        <div class="box">
-            10
-        </div>
-        <div class="box">
-            11
-        </div>
-        <div class="box">
-            12
+
+        <div class="item3">
+            <div class="block">.column1</div>
+            <div class="block">.column2</div>
+            <div class="block">.column3</div>
+            <div class="block">.column4</div>
+            <div class="block">.column5</div>
+            <div class="block">.column6</div>
         </div>
     </div>
 </body>

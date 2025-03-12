@@ -20,10 +20,35 @@
                 align-items: center;
                 justify-content: center;
                 height: 100vh;
+                background-color: rgb(53, 53, 53);
             }
             img {
                 width: 5%;
                 border-radius: 10px;
+            }
+            .card {
+                width: 80%;
+            }
+            .d-flex{
+                gap: 30px;
+            }
+            .text-bg-dark{
+                width: 40%;
+            }
+            .m{
+                margin-top: 50px;
+            }
+            i.fa-bootstrap{
+                background-color: rgb(0, 136, 255);
+                padding: 5px;
+                border-radius: 50%;
+                border: 1px solid white;
+            }
+            .icon{
+                display: flex;
+                gap: 20px;
+                justify-content: center;
+                align-items: center;
             }
         </style>
     </head>
@@ -33,18 +58,69 @@
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
             crossorigin="anonymous"
         ></script>
-        <div class="container">
-            <div class="card">
-                <div class="card-header">Rikkei cards</div>
-                <div class="card-body">
-                    <div class="card text-bg-dark">
-                        <img src="IMG/technology.png" class="card-img"/>
-                        <div class="card-img-overlay d-flex justify-content-center d-flex align-items-center">
-                            <h1 class="card-text">
-                                Short title, long <br>
-                                jacket
-                            </h1>
+        <div class="card">
+            <div class="card-header">Rikkei cards</div>
+            <div class="card-body d-flex">
+                <div class="card text-bg-dark">
+                    <img src="IMG/img1.jpg" class="card-img" />
+                    <div
+                        class="card-img-overlay d-flex justify-content-center d-flex align-items-center"
+                    >
+                    <div class="flex-column">
+                        <h1 class="card-text">
+                            Short title, long <br />
+                            jacket
+                        </h1>
+                        <div class="d-flex justify-content-between align-items-end m">
+                            <i class="fa-brands fa-bootstrap"></i>
+                            <div class="icon">
+                                <i class="fa-solid fa-map-pin"></i> Earth
+                                <i class="fa-solid fa-calendar-days"></i> 3d
+                            </div>
                         </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="card text-bg-dark">
+                    <img src="IMG/img1.jpg" class="card-img" />
+                    <div
+                        class="card-img-overlay d-flex justify-content-center d-flex align-items-center"
+                    >
+                    <div class="flex-column">
+                        <h1 class="card-text">
+                            Much longer <br>
+                            title that wraps <br>
+                            to multiple lines
+                        </h1>
+                        <div class="d-flex justify-content-between align-items-end m">
+                            <i class="fa-brands fa-bootstrap"></i>
+                            <div class="icon">
+                                <i class="fa-solid fa-map-pin"></i> Pakistan
+                                <i class="fa-solid fa-calendar-days"></i> 4d
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="card text-bg-dark">
+                    <img src="IMG/img1.jpg" class="card-img" />
+                    <div
+                        class="card-img-overlay d-flex justify-content-center d-flex align-items-center"
+                    >
+                    <div class="flex-column">
+                        <h1 class="card-text">
+                            Another longer <br>
+                            title belongs <br>
+                            here
+                        </h1>
+                        <div class="d-flex justify-content-between align-items-end m">
+                            <i class="fa-brands fa-bootstrap"></i>
+                            <div class="icon">
+                                <i class="fa-solid fa-map-pin"></i> California
+                                <i class="fa-solid fa-calendar-days"></i> 5d
+                            </div>
+                        </div>
+                    </div>
                     </div>
                 </div>
             </div>
