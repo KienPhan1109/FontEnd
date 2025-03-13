@@ -3,124 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style5.css">
     <title>Document</title>
     <style>
-        .container{
-    width: 40%;
-    height: 100vh;
-    position: relative;
-    
-}
-
-
-span{
-    background-color: #9f4a4b;
-    color: white;
-    margin-left: 30px;
-    display:none;
-}
-
-
-.item2{
-    grid-template-columns: 3fr 1fr;
-    height: 40vh;
-}
-
-.main,.aside, .block,.nav{
-    background-color: #9f4a4b;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-
-}
-
-.item2,.item3,.item1{
-    display: grid;
-    gap: 10px;
-    margin:10px 0 10px 0;
-
-}
-
-.item3{
-    grid-template-columns:repeat(3,1fr);
-    height: 20vh;
-}
-
-.item1{
-    grid-template-columns:repeat(2,1fr);
-    height: 10vh;
-}
-
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #e6e7e7;
-}
-
-.LOGO{
-    font-size: 60px;
-    height: 10vh;
-    color: #9f4a4b;
-    font-weight: 800;
-}
-
-
-.nav{
-    background-color: #9f4a4b;
-}
-
-@media (max-width:1200px) {
-    .item2{
-        grid-template-columns: 1fr;
-        grid-template-rows: 2fr 1fr;
-
+    header{
+        background-color: red;
+        color: white;
+        text-align: center;
+        width: 300px;
+        border-radius: 5px;
+        padding: 10px;
     }
-
-    .item3{
-        grid-template-columns: repeat(2, 1fr);
-        height: 20vh;
-    }
-}
-
-@media (max-width:768px) {
-    span{
-        display: inline-block;
+    .text{
+        background-color: black;
+        width: 70px;
         position: absolute;
-
+        left: 270px;
+        bottom: 490px;
     }
-    .item3{
-        grid-template-columns: 1fr;
-    }
-    .item1{
-       grid-template-columns: 1fr;
-    }
-}
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="item1">
-            <div class="LOGO">LOGO  <span>&#9776;</span></div>
-        <div class="nav">#NAV</div>
-        </div>
-
-
-        <div class="item2"> 
-            <div class="main">#MAIN</div>
-            <div class="aside">#aside</div>
-        </div>
-
-        <div class="item3">
-            <div class="block">.column1</div>
-            <div class="block">.column2</div>
-            <div class="block">.column3</div>
-            <div class="block">.column4</div>
-            <div class="block">.column5</div>
-            <div class="block">.column6</div>
-        </div>
+    <header>
+        5G160B
+    </header>
+    <div class="text">
+        hot
     </div>
+    fgnfg
 </body>
 </html>
