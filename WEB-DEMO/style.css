@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: monospace;
+}
+.container {
+    width: 1440px;
+}
+.header {
+    width: 1440px;
+    height: 100px;
+    padding: 29px 100px 30px 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo {
+    font-size: 34px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4.5px;
+    padding: 4.5px 0px;
+    margin-right: 266px;
+}
+.logo img {
+    width: 50px;
+}
+.container_nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 75px;
+    margin-right: 158px;
+}
+.container_nav a {
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    text-decoration: none;
+}
+.container_nav a:hover {
+    text-decoration: underline;
+    color: rgb(47, 47, 47);
+}
+.container_icon {
+    display: flex;
+    gap: 45px;
+}
+.image img {
+    width: 1440px;
+    height: 720px;
+}
+.image {
+    position: relative;
+    margin-bottom: 57px;
+}
+.discover{
+    position: absolute;
+    right: 58px;
+    top: 153px;
+    background-color: #FFF3E3;
+    padding: 62px 43px 37px 39px;
+}
+.text {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+.title{
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 65px;
+    color: #B88E2F;
+    margin-bottom: 17px;
+}
+.content {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+    margin-bottom: 46px;
+}
+.button {
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    background-color: #B88E2F;
+    padding: 25px 72px;
+    width: 222px;
+    height: 74px;
+}
+.browse {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.lorem {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    color: #666666;
+    margin-bottom: 63px;
+}
+.container_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.container_img img{
+    width: 381px;
+    height: 480px;
+}
+.img {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    font-size: 24px;
+    font-weight: 600;
+}
