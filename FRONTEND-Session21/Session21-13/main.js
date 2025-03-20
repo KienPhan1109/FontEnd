@@ -9,7 +9,7 @@ while (n > 0) {
 }
 
 document.writeln("<br>");
-let m = 1;
+let m = 1;1
 while (m < 10) {
     for (let i = 0; i < m; i++) {
         document.writeln("*")
@@ -26,15 +26,32 @@ while (o > 0) {
         if (i == o)
         {
             for (let j = o; j < o + count; j++) {
-                document.writeln("*");
+                document.writeln("* ");
             }
             count++;
         }
         else
         { 
-            document.writeln('');
+            document.writeln("&nbsp;&nbsp;");
         }
     }
     document.writeln("<br>");
     o--;
+}
+
+document.writeln("<br>");
+let p = 10;
+while (p > 0) {
+    for (let i = 10; i > 1; i--) {
+        if (i <= p)
+        {
+            document.writeln("* ");
+        }
+        else
+        { 
+            document.writeln("&nbsp;&nbsp;");
+        }
+    }
+    document.writeln("<br>");
+    p--;
 }
