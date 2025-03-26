@@ -1,4 +1,30 @@
-let number1=parseInt(prompt("nhập số thứ nhất:"))
-let number2=parseInt(prompt("nhập số thứ hai:"))
-let randomNumber = Math.floor(Math.random() * (number2 - number1)) + number1;
-document.writeln("Số ngẫu nhiên trong khoảng từ "+number1+" đến "+number2+" là: "+randomNumber)
+let n=10;
+
+let kt=true;
+if(isNaN(n)||n<=1){
+    console.log("khong phai la so nguyen to");
+    
+}else{
+   let numstar=2;
+   let output="";
+   let count=0;
+
+   while(count<n){
+    let snt=true;
+    
+    for(let i=2;i<=Math.sqrt(numstar);i++){
+        if(numstar%i==0){
+            snt=false
+            break;
+        }
+    }
+     if(snt){
+        output+=numstar+" ";
+        count++;
+     }
+
+    numstar++;
+   }
+
+   console.log(output);
+}
