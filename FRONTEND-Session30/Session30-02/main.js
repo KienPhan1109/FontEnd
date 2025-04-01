@@ -33,11 +33,38 @@ function inputChoice() {
     return choice;
 }
 
+function displayAllBooks(books) {
+    if (books.length === 0) {
+        console.log("Sách trong kho trống!");
+        return;
+    }
+
+    console.log("\nDanh sách sách");
+    books.forEach((value) => {
+        console.log(`\n   ID: ${value.id}`);
+        console.log(`   Name: ${value.name}`);
+        console.log(`   Price: ${value.price}`);
+        console.log(`   Quantity: ${value.quantity}`);
+        console.log(`   Category: ${value.category}`);
+    });
+
+    let totalQuantity = books.reduce((sum, book) => sum + book.quantity, 0);
+    console.log(`Tổng số lượng sách trong kho: ${totalQuantity}`);
+}
 function displayBooks(books) {
     if (books.length === 0) {
         console.log("Sách trong kho trống!");
         return;
     }
+
+    console.log("\nDanh sách sách");
+    books.forEach((value) => {
+        console.log(`\n   ID: ${value.id}`);
+        console.log(`   Name: ${value.name}`);
+        console.log(`   Price: ${value.price}`);
+        console.log(`   Quantity: ${value.quantity}`);
+        console.log(`   Category: ${value.category}`);
+    });
 
     let category;
     do {
@@ -45,7 +72,9 @@ function displayBooks(books) {
         if (!category) console.log("Dữ liệu nhập không được bỏ trống");
     } while (!category);
 
-    let categories = books.filter((value) => value.category === category);
+    let categories = books.filter(
+        (value) => value.category.toLowerCase() === category.toLowerCase()
+    );
 
     if (categories.length === 0) {
         console.log("Không có thể loại sách này!");
@@ -105,7 +134,6 @@ function addBook(books) {
             if (isNaN(quantity) || quantity <= 0)
                 console.log("Giá trị nhập vào không hợp lệ!");
         } while (isNaN(quantity) || quantity <= 0);
-
         books.push({ id, name, price, quantity, category });
         n--;
     }
@@ -156,6 +184,135 @@ function addCarts(cart, books) {
     console.log("Thêm sách thành công!");
 }
 
+function searchBooksByName(books) {
+    let name;
+    do {
+        name = prompt("Nhập vào tên sách cần tìm kiếm");
+        if (!name) console.log("Tên sách không được bỏ trống!");
+    } while (!name);
+
+    let findName = books.filter((book) =>
+        book.name.toLowerCase().includes(name.toLowerCase())
+    );
+
+    if (findName.length === 0) {
+        console.log("Không tìm thấy tên sách!");
+        return;
+    }
+
+    console.log("Đã tìm thấy sách !");
+    findName.forEach((book) => {
+        console.log(`\n   ID: ${book.id}`);
+        console.log(`   Name: ${book.name}`);
+        console.log(`   Price: ${book.price}`);
+        console.log(`   Quantity: ${book.quantity}`);
+        console.log(`   Category: ${book.category}`);
+    });
+}
+
+function searchBooksById(books) {
+    let id;
+    do {
+        id = Number(prompt("Nhập vào ID sách cần tìm kiếm"));
+        if (isNaN(id) || id <= 0) console.log("ID không hợp lệ!");
+    } while (isNaN(id) || id <= 0);
+
+    let book = books.find((b) => b.id === id);
+    if (!book) {
+        return console.log("Không tìm thấy sách với ID này!");
+    }
+
+    console.log("Đã tìm thấy sách !");
+    console.log(`\n   ID: ${book.id}`);
+    console.log(`   Name: ${book.name}`);
+    console.log(`   Price: ${book.price}`);
+    console.log(`   Quantity: ${book.quantity}`);
+    console.log(`   Category: ${book.category}`);
+}
+
+function searchBooks(books) {
+    while (true) {
+        console.log("\n   Lựa chọn cách tìm kiếm:");
+        console.log("   1. Tìm kiếm theo tên");
+        console.log("   2. Tìm kiếm theo id");
+        console.log("   3. Thoát");
+
+        let choice = inputChoice();
+
+        if (choice === 3) break;
+
+        switch (choice) {
+            case 1:
+                searchBooksByName(books);
+                break;
+
+            case 2:
+                searchBooksById(books);
+                break;
+
+            default:
+                console.log("Lựa chọn không hợp lệ!");
+                break;
+        }
+    }
+}
+
+function sortBooks(books) {
+    while (true) {
+        console.log("\n   Lựa chọn cách sắp xếp:");
+        console.log("   1. Sắp xếp tăng dần theo giá");
+        console.log("   2. Sắp xếp giảm dần theo giá");
+        console.log("   3. Thoát");
+
+        let choice = inputChoice();
+
+        if (choice === 3) break;
+
+        switch (choice) {
+            case 1:
+                books.sort((x, y) => x.price - y.price);
+                console.log("Sắp xếp tăng dần thành công!");
+                displayAllBooks(books);
+                break;
+
+            case 2:
+                books.sort((x, y) => y.price - x.price);
+                console.log("Sắp xếp giảm dần thành công!");
+                displayAllBooks(books);
+                break;
+
+            default:
+                console.log("Lựa chọn không hợp lệ!");
+                break;
+        }
+    }
+}
+
+function totalBooks(cart) {
+    if (cart.length === 0) {
+        console.log("Giỏ hàng trống!");
+        return;
+    }
+
+    console.log("\nDanh sách sách trong giỏ hàng:");
+    cart.forEach((value) => {
+        console.log(`\n   ID: ${value.id}`);
+        console.log(`   Name: ${value.name}`);
+        console.log(`   Price: ${value.price}`);
+        console.log(`   Quantity: ${value.quantity}`);
+        console.log(`   Category: ${value.category}`);
+    });
+
+    let totalQuantity = cart.reduce((sum, value) => sum + value.quantity, 0);
+    let totalPrice = cart.reduce(
+        (sum, value) => sum + value.price * value.quantity,
+        0
+    );
+
+    console.log(`Tổng số lượng sách trong giỏ hàng: ${totalQuantity}`);
+    console.log(`Tổng tiền trong giỏ hàng: ${totalPrice}`);
+}
+
 function menuChoice() {
     while (true) {
         console.log("\n===== MENU =====");
@@ -185,6 +342,7 @@ function menuChoice() {
                 break;
 
             case 3:
+                searchBooks(books);
                 break;
 
             case 4:
@@ -192,12 +350,15 @@ function menuChoice() {
                 break;
 
             case 5:
+                sortBooks(books);
                 break;
 
             case 6:
+                totalBooks(cart);
                 break;
 
             case 7:
+                displayAllBooks(books);
                 break;
 
             default:
