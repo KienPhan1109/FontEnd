@@ -1,0 +1,19 @@
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(47, 47, 47);
+}
+.container {
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    width: 15%;
+    border-radius: 10px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

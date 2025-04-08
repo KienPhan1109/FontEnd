@@ -1,0 +1,34 @@
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+#red {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border: 1px solid black;
+}
+#green {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    border: 1px solid black;
+}
+#purple {
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+    border: 1px solid black;
+}
+
+#background {
+    margin: auto;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.box {
+    display: flex;
+    gap: 10px;
+}

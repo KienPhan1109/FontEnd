@@ -1,0 +1,14 @@
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+#background {
+    background-color: black;
+    color: white;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
