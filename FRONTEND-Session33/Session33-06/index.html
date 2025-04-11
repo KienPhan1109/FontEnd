@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./style.css" />
+        <script
+            src="https://kit.fontawesome.com/7b988689d5.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Ứng dụng Thời tiết</h1>
+            <div class="container_search">
+                <input
+                    type="text"
+                    id="search"
+                    placeholder="Nhập vào Thành Phố.."
+                />
+                <button id="btn">Tìm Kiếm</button>
+            </div>
+            <div class="box">
+                <div id="city"></div>
+                <div class="container_weather">
+                    <div id="icon"></div>
+                    <div id="temperature"></div>
+                    <div class="detail">
+                        <div id="description"></div>
+                        <div id="humidity"></div>
+                        <div id="windSpeed"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="./main.js"></script>
+    </body>
+</html>

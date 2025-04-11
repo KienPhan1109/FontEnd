@@ -6,23 +6,12 @@ body {
 }
 .container {
     padding: 20px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     margin: auto;
     width: 600px;
-    position: relative;
     border-radius: 10px;
 }
-#background {
-    border-radius: 10px;
-    left: 0px;
-    top: 0px;
-    position: absolute;
-    background-color: black;
-    width: 640px;
-    height: 333px;
-    opacity: 0.2;
-    display: none;
-}
+
 #hide {
     margin: 50px auto;
     padding: 20px 10px;
@@ -34,6 +23,7 @@ body {
     display: flex;
     align-items: center;
     opacity: 0;
+    background-color: white;
 }
 
 #icon {
@@ -41,3 +31,4 @@ body {
     right: 10px;
     top: 10px;
 }
+

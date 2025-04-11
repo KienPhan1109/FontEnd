@@ -1,0 +1,22 @@
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(71, 71, 71);
+}
+
+.container {
+    margin: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#btn {
+    width: 80px;
+}

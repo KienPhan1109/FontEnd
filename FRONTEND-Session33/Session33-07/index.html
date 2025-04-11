@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./style.css" />
+        <script
+            src="https://kit.fontawesome.com/7b988689d5.js"
+            crossorigin="anonymous"
+        ></script>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+            crossorigin="anonymous"
+        />
+    </head>
+    <body>
+        <div class="fixed">
+            <div class="card d-flex justify-content-center text-center w-100">
+                <div class="card-header bg-primary text-light">
+                    <h3>Giỏ hàng</h3>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text">Giỏ hàng trống</p>
+                    <p class="card-text text-end">
+                        <b>Tổng:</b>
+                    </p>
+                    <a href="#" class="btn btn-primary btn-checkout"
+                        >Thanh toán</a
+                    >
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">KienPhan</a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarColor02"
+                    aria-controls="navbarColor02"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarColor02">
+                    <ul class="navbar-nav me-auto"></ul>
+                    <h5 class="text-light m-2">Tìm kiếm sản phẩm</h5>
+                    <form class="d-flex w-25" role="search">
+                        <input
+                            class="form-control me-3 bg-light text-dark"
+                            type="search"
+                            aria-label="Search"
+                            data-has-listeners="true"
+                            id="inputSearch"
+                        />
+                        <button
+                            class="btn btn-outline-light w-25"
+                            type="button"
+                            id="search"
+                        >
+                            Tìm kiếm
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div class="card text-center">
+            <div class="card-header">
+                <h1>Cửa hàng đơn giản của KienPhan</h1>
+            </div>
+            <div class="card-body">
+                <h2 class="text-lg-start m-5">Danh sách sản phẩm</h2>
+                <div class="container w-100">
+                    <div class="row">
+                        <!-- Dữ liệu từ Js -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+            crossorigin="anonymous"
+        ></script>
+        <script src="./main.js"></script>
+    </body>
+</html>

@@ -1,5 +1,13 @@
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+.container {
+    margin: auto;
+}
 table {
-    width: 80%;
+    width: 800px;
     border-collapse: collapse;
 }
 th, td {

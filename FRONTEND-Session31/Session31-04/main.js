@@ -1,8 +1,11 @@
 document.getElementById("open").addEventListener("click", function () {
     document.getElementById("hide").style.opacity = "1";
-    document.getElementById("background").style.display = "block";
+    document.getElementsByClassName("container")[0].style.backgroundColor =
+        "rgb(113, 113, 113)";
 });
 
 document.getElementById("icon").addEventListener("click", function () {
     document.getElementById("hide").style.opacity = "0";
+    document.getElementsByClassName("container")[0].style.backgroundColor =
+        "white";
 });

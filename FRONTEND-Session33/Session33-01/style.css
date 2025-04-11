@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(71, 71, 71);
+}
+
+.container {
+    margin: auto;
+    width: 400px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+#toggle {
+    position: absolute;
+    right: 20px;
+    top: 25px;
+}
+#password {
+    height: 20px;
+    width: 100%;
+}

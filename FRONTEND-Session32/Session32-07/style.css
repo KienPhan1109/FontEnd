@@ -1,0 +1,45 @@
+body {
+    font-family: monospace;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(71, 71, 71);
+}
+
+.container {
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    width: 500px;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+img {
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+img:hover {
+    opacity: 0.9;
+}
+
+.overlay img {
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 10px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
