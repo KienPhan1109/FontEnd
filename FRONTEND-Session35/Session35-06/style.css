@@ -1,0 +1,47 @@
+.status {
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.status .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.status.active {
+    background-color: #e6f4ea;
+    color: #138c5d;
+}
+
+.status.active .dot {
+    background-color: #20c997;
+}
+
+.status.inactive {
+    background-color: #fcebea;
+    color: #e3342f;
+}
+
+.status.inactive .dot {
+    background-color: #e3342f;
+}
+.table td,
+.table th {
+    vertical-align: middle;
+}
+
+.body {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+.table-row-spacing > tbody > tr > td {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
