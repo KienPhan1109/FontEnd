@@ -1,0 +1,20 @@
+body {
+    font-family: monospace;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(255, 247, 220);
+}
+
+.container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 40px;
+}
+button {
+    width: 80px;
+}

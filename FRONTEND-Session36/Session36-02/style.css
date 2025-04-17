@@ -1,0 +1,54 @@
+body {
+    font-family: monospace;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(255, 247, 220);
+}
+
+.container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+img {
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+.container_box {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.box {
+    padding: 30px;
+    background-color: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    text-align: left;
+}
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.food {
+    font-weight: bold;
+}
+.button {
+    background-color: rgb(22, 151, 59);
+    color: white;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}

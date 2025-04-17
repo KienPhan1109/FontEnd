@@ -1,0 +1,17 @@
+body {
+    font-family: monospace;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(71, 71, 71) !important;
+}
+
+.card {
+    text-align: center;
+    width: 30vw;
+    margin: auto;
+    background-color: rgb(233, 233, 233);
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
